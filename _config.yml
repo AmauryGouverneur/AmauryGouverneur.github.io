@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Amaury Gouverneur / Phd student"
+title                    : "Amaury Gouverneur"
 title_separator          : "-"
 name                     : &name "Amaury Gouverneur"
 description              : &description "personal description"
