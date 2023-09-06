@@ -10,7 +10,7 @@ redirect_from:
 
 **About Me:**
 
-I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Sweden, under the guidance of Professors Mikael Skoglund and Tobias Oechtering. My doctoral research is supported by the prestigious WASP Graduate School. My research focus lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems. Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from KTH and École Polytechnique de Louvain (UCLouvain). 
+I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Sweden, under the guidance of Professors Mikael Skoglund and Tobias Oechtering. My doctoral research is supported by the prestigious WASP Graduate School. My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems. Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from KTH and École Polytechnique de Louvain (UCLouvain).  
 
 **Research:**
 
