@@ -30,7 +30,8 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 **Service:**
 
 - Reviewer for Eusipco 2022 and 2023 conferences.
-- Supervised the bachelor theses of Reza Qorbani and Kevin Pettersson on "Investigation of Information-Theoretic Bounds on Generalization Error."
+- Supervised the bachelor theses of: 
+  - Reza Qorbani and Kevin Pettersson on "Investigation of Information-Theoretic Bounds on Generalization Error".
 - Supervised the master theses of:
   - Zhen Tian - Anomaly Detection in Application Logs.
   - Guangze Shi - Privacy leaks from deep linear networks, Information leak via shared gradients in federated learning systems.
