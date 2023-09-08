@@ -41,9 +41,8 @@ I am also interested in wider topics such as [list to be completed], generalizat
 
 **Teaching:**
 
-- [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTH - Spring 2021, 2022, and 2023.
-- [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTHs - Spring 2021, 2022, and 2023.
-- Deep Learning course at Ericsson for KTH during the Spring semester of 2022.
+- [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTH - Spring 2021, 2022, and 2023
+- [<a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451">Deep Learning course for Ericsson</a>] at KTHs - Spring 2022
 
 **Service:**
 
