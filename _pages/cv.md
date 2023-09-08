@@ -28,9 +28,10 @@ Work experience
   * Co-founder of *aSmartWorld*, a Belgian startup specializing in collecting, refurbishing, and selling smartphones and tablets across Europe.
   * Developed an iOS application and automated ERP processes to optimize operations.
 
-* Summer 2017: Analyst Assistant
-  * Deloitte London
-  * Consulting department "Strategy and Operations"
+* Summer 2017: Analyst Intern
+  * Deloitte London, Consulting - "Strategy and Operations" Division
+  * Gained hands-on experience in consulting, focusing on innovative insurance best practices and operational excellence research.
+  * Gained valuable exposure to Deloitte's diverse consulting services, spanning Deloitte Digital, Deloitte Ventures, and Doblin innovation consulting.
 
 
 Publications
