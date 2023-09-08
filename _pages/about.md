@@ -19,11 +19,11 @@ Moreover, I am genuinely eager to engage in conversations on various aspects of 
 **Publications:**
 
 - [Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards](https://arxiv.org/abs/2304.13593)
-  <br /><small> Amaury Gouverneur , <it> Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</it></small>
+  <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
   <br /><small>Presented at ISIT 2023 [<a href="https://arxiv.org/pdf/2304.13593.pdf">pdf</a>] [<a href="citations/thomson_sampling_regret_contextual_bandits_subgaussian.html">cite</a>]</small>
 
 - [An Information-Theoretic Analysis of Bayesian Reinforcement Learning](https://arxiv.org/abs/2207.08735)
-  <br /><small> Amaury Gouverneur , <it> Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</it></small>
+  <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
   <br /><small>Presented at Allerton 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>]  
 
 - [Optimal intermittent particle filter](https://arxiv.org/abs/2207.08735)
@@ -31,11 +31,11 @@ Moreover, I am genuinely eager to engage in conversations on various aspects of 
 <br /><small>IEEE Transactions on Signal Processing 2022[<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
 - [Optimal measurement times for particle filtering and its application in mobile tumor tracking](https://arxiv.org/abs/2207.08735)
-<br /><small> Amaury Gouverneur, <it> and Benoit Macq</it></small>
+<br /><small> *Amaury Gouverneur*, and Benoit Macq</small>
 <br /><small>Master thesis[<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
 - [Optimal measurement budget allocation for particle filtering](https://arxiv.org/abs/2207.08735)
-<br /><small> <it> Antoine Aspeel, </it> Amaury Gouverneur, <it> Raphaël M. Jungers, and Benoit Macq</it></small>
+<br /><small>  Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
 <br /><small>Presented at IEEE International Conference on Image Processing (ICIP) 2020[<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
 
