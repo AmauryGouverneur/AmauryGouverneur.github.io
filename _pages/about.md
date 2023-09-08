@@ -24,7 +24,7 @@ Moreover, I am genuinely eager to engage in conversations on various aspects of 
 
 - [Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards](https://arxiv.org/abs/2304.13593)
   <br /><small><it>*Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</it></small>
-  - <small>ISIT 2023 [<a href="https://arxiv.org/pdf/2304.13593.pdf">pdf</a>] [<a href="citations/thomson_sampling_regret_contextual_bandits_subgaussian.html">cite</a>]</small>
+  <br /><small>ISIT 2023 [<a href="https://arxiv.org/pdf/2304.13593.pdf">pdf</a>] [<a href="citations/thomson_sampling_regret_contextual_bandits_subgaussian.html">cite</a>]</small>
 
 - [An Information-Theoretic Analysis of Bayesian Reinforcement Learning](https://arxiv.org/abs/2207.08735)
   Amaury Gouverneur, *Borja Rodríguez-Gálvez*, Tobias J. Oechtering, Mikael Skoglund
