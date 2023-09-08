@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -24,35 +24,44 @@ and its application in mobile tumor tracking" under the supervision of Pr. Benoi
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2019 - 2021: Technical officer
+  * aSmartWorld startup
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2017: Analyst Assistant
+  * Deloitte London
+  * Consulting department "Strategy and Operations"
+
+
   
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+<!--  <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
+  {% endfor %}</ul> -->
+
+- [Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards](https://arxiv.org/abs/2304.13593)
+  <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
+  <br /><small>Presented at ISIT 2023 [<a href="https://arxiv.org/pdf/2304.13593.pdf">pdf</a>] [<a href="citations/thomson_sampling_regret_contextual_bandits_subgaussian.html">cite</a>]</small>
+
+- [An Information-Theoretic Analysis of Bayesian Reinforcement Learning](https://arxiv.org/abs/2207.08735)
+  <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
+  <br /><small>Presented at Allerton 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>]  
+
+- [Optimal intermittent particle filter](https://ieeexplore.ieee.org/abstract/document/9794909)
+<br /><small> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
+<br /><small>IEEE Transactions on Signal Processing 2022 [<a href="https://ieeexplore.ieee.org/iel7/78/9675017/09794909.pdf">pdf</a>] 
+
+- [Optimal measurement times for particle filtering and its application in mobile tumor tracking](https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem)
+<br /><small> *Amaury Gouverneur*, and Benoit Macq</small>
+<br /><small>Master thesis [<a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem">pdf</a>] 
+
+- [Optimal measurement budget allocation for particle filtering](https://ieeexplore.ieee.org/abstract/document/9190702)
+<br /><small> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
+<br /><small>Presented at IEEE International Conference on Image Processing (ICIP) 2020 [<a href="https://arxiv.org/pdf/2005.08557">pdf</a>] 
+
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+- [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTH - Spring 2021, 2022, and 2023
+- [<a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451">Deep Learning course for Ericsson</a>] at KTHs - Spring 2022  
   
-Service
-======
-* Currently signed in to 43 different slack teams
