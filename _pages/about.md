@@ -14,7 +14,7 @@ I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Swede
 
 My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
 
-Moreover, I am genuinely eager to engage in conversations on various aspects of information theory and machine learning. Please feel free to reach out to me, I warmly welcome any opportunity for discussion and collaboration.
+I am also interested in wider topics such as [list to be completed], generalization of learning algorithm, etc. Please feel free to reach out to me, I am always open for discussions and collaboration.
 
 **Publications:**
 
@@ -41,8 +41,9 @@ Moreover, I am genuinely eager to engage in conversations on various aspects of 
 
 **Teaching:**
 
-- Teaching Assistant for the course EQ2341: Pattern Recognition and Machine Learning at KTH during the Spring semesters of 2021, 2022, and 2023.
-- Teaching Assistant for a Deep Learning course at Ericsson for KTH during the Spring semester of 2022.
+- [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTH - Spring 2021, 2022, and 2023.
+- [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTHs - Spring 2021, 2022, and 2023.
+- Deep Learning course at Ericsson for KTH during the Spring semester of 2022.
 
 **Service:**
 
