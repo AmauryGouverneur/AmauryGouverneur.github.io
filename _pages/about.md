@@ -14,7 +14,8 @@ I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Swede
 
 My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
 
-I am also interested in wider topics such as [list to be completed], generalization of learning algorithm, etc. Please feel free to reach out to me, I am always open for discussions and collaboration.
+[//]: <>  (I am also interested in wider topics such as [list to be completed], generalization of learning algorithm, etc.) 
+Please feel free to reach out to me, I am always open for discussions and collaboration.
 
 **Publications:**
 
