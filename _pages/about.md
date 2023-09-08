@@ -18,17 +18,13 @@ Moreover, I am genuinely eager to engage in conversations on various aspects of 
 
 **Publications:**
 
-- [Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards](https://arxiv.org/abs/2304.13593)  
-  *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund
-  - ISIT 2023 [pdf](https://arxiv.org/pdf/2304.13593.pdf) 
-
 - [Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards](https://arxiv.org/abs/2304.13593)
-  <br /><small><it> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</it></small>
+  <br /><small> Amaury Gouverneur , <it> Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</it></small>
   <br /><small>Presented at ISIT 2023 [<a href="https://arxiv.org/pdf/2304.13593.pdf">pdf</a>] [<a href="citations/thomson_sampling_regret_contextual_bandits_subgaussian.html">cite</a>]</small>
 
 - [An Information-Theoretic Analysis of Bayesian Reinforcement Learning](https://arxiv.org/abs/2207.08735)
-  Amaury Gouverneur, *Borja Rodríguez-Gálvez*, Tobias J. Oechtering, Mikael Skoglund
-  - Allerton 2022 [pdf](https://arxiv.org/pdf/2207.08735.pdf) 
+  <br /><small> Amaury Gouverneur , <it> Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</it></small>
+  <br /><small>Presented at Allerton 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>]  
 
 
 - 2020 Antoine Aspeel, Amaury Gouverneur, Raphaël M Jungers, and MACQ Benoît. Optimal measurement budget allocation for particle filtering. In 2020 IEEE International Conference on Image Processing (ICIP), pages 1–5. IEEE, 2020.
