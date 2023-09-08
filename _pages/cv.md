@@ -24,8 +24,9 @@ and its application in mobile tumor tracking" under the supervision of Pr. Benoi
 
 Work experience
 ======
-* 2019 - 2021: Technical officer
-  * aSmartWorld startup
+* 2019 - 2020: Technology Officer
+  * Co-founder of *aSmartWorld*, a Belgian startup specializing in collecting, refurbishing, and selling smartphones and tablets across Europe.
+  * Developed an iOS application and automated ERP processes to optimize operations.
 
 * Summer 2017: Analyst Assistant
   * Deloitte London
