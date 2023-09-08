@@ -27,7 +27,7 @@ Moreover, I am genuinely eager to engage in conversations on various aspects of 
   <br /><small>Presented at Allerton 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>]  
 
 - [Optimal intermittent particle filter](https://arxiv.org/abs/2207.08735)
-<br /><small> <it> Antoine Aspeel, </it> Amaury Gouverneur, <it> Raphaël M. Jungers, and Benoit Macq</it></small>
+<br /><small> <it> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</it></small>
 <br /><small>IEEE Transactions on Signal Processing 2022[<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
 - [Optimal measurement times for particle filtering and its application in mobile tumor tracking](https://arxiv.org/abs/2207.08735)
