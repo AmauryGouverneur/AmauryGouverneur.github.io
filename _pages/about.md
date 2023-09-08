@@ -27,17 +27,17 @@ Please feel free to reach out to me, I am always open for discussions and collab
   <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
   <br /><small>Presented at Allerton 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>]  
 
-- [Optimal intermittent particle filter](https://arxiv.org/abs/2207.08735)
+- [Optimal intermittent particle filter](https://ieeexplore.ieee.org/abstract/document/9794909)
 <br /><small> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
-<br /><small>IEEE Transactions on Signal Processing 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
+<br /><small>IEEE Transactions on Signal Processing 2022 [<a href="https://ieeexplore.ieee.org/iel7/78/9675017/09794909.pdf">pdf</a>] 
 
-- [Optimal measurement times for particle filtering and its application in mobile tumor tracking](https://arxiv.org/abs/2207.08735)
+- [Optimal measurement times for particle filtering and its application in mobile tumor tracking](https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem)
 <br /><small> *Amaury Gouverneur*, and Benoit Macq</small>
-<br /><small>Master thesis [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
+<br /><small>Master thesis [<a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem">pdf</a>] 
 
-- [Optimal measurement budget allocation for particle filtering](https://arxiv.org/abs/2207.08735)
+- [Optimal measurement budget allocation for particle filtering](https://ieeexplore.ieee.org/abstract/document/9190702)
 <br /><small> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
-<br /><small>Presented at IEEE International Conference on Image Processing (ICIP) 2020 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
+<br /><small>Presented at IEEE International Conference on Image Processing (ICIP) 2020 [<a href="https://arxiv.org/pdf/2005.08557">pdf</a>] 
 
 
 **Teaching:**
