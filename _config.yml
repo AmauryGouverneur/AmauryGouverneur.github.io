@@ -84,7 +84,10 @@ author:
   avatar           : "cropped_profile_picture.jpg"
   bio              : "PhD student"
   location         : "Stockholm, Sweden"
-  employer         : <a href="https://www.kth.se">KTH</br>Royal Institute of Technology</a>
+  employer         : <a href="https://www.kth.se">
+  KTH Royal Institute
+  of Technology
+</a>
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F7UOSW4_EgBKnGKTWn6EMf31WczFADlByaahDnOgyhoBEbtXqsbNj_pAkocfPfCI0gxfOjMFFtOADBX2ClwkNmZ-F4N9GY5ZxsAB-Cz5OknTMmWUfc&user=ajb9VxQAAAAJ"
   email            : "amauryg@kth.se"
