@@ -32,8 +32,6 @@ Work experience
   * Consulting department "Strategy and Operations"
 
 
-  
-
 Publications
 ======
 <!--  <ul>{% for post in site.publications %}
