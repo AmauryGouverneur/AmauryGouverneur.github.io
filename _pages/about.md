@@ -47,10 +47,10 @@ Please feel free to reach out to me, I am always open for discussions and collab
 
 **Service:**
 
-- Reviewing for Eusipco conferences.
+- Reviewing for Eusipco conferences
 - Supervised the bachelor theses of: 
   - Reza Qorbani and Kevin Pettersson
-  <br /><small> Investigation of Information-Theoretic Bounds on Generalization Error</small>
+  <br /><small> [<a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659">Investigation of Information-Theoretic Bounds on Generalization Error</a>] </small>
 - Supervised the master theses of:
   - Zhen Tian
   <br /><small> Anomaly Detection in Application Logs </small>
