@@ -26,10 +26,18 @@ Moreover, I am genuinely eager to engage in conversations on various aspects of 
   <br /><small> Amaury Gouverneur , <it> Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</it></small>
   <br /><small>Presented at Allerton 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>]  
 
+- [Optimal intermittent particle filter](https://arxiv.org/abs/2207.08735)
+<br /><small> <it> Antoine Aspeel, </it> Amaury Gouverneur, <it> Raphaël M. Jungers, and Benoit Macq</it></small>
+<br /><small>IEEE Transactions on Signal Processing 2022[<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
-- 2020 Antoine Aspeel, Amaury Gouverneur, Raphaël M Jungers, and MACQ Benoît. Optimal measurement budget allocation for particle filtering. In 2020 IEEE International Conference on Image Processing (ICIP), pages 1–5. IEEE, 2020.
-- 2022 Antoine Aspeel, Amaury Gouverneur, Raphaël M Jungers, and Benoit Macq. Optimal intermittent particle filter. IEEE Transactions on Signal Processing, volume 70, pages 2814–2825. IEEE, 2022.
-- Gouverneur, Amaury, and Benoît Macq. "Optimal measurement times for particle filtering and its application in mobile tumor tracking."
+- [Optimal measurement times for particle filtering and its application in mobile tumor tracking](https://arxiv.org/abs/2207.08735)
+<br /><small> Amaury Gouverneur, <it> and Benoit Macq</it></small>
+<br /><small>Master thesis[<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
+
+- [Optimal measurement budget allocation for particle filtering](https://arxiv.org/abs/2207.08735)
+<br /><small> <it> Antoine Aspeel, </it> Amaury Gouverneur, <it> Raphaël M. Jungers, and Benoit Macq</it></small>
+<br /><small>Presented at IEEE International Conference on Image Processing (ICIP) 2020[<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
+
 
 **Teaching:**
 
