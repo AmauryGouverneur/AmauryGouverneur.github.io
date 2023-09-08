@@ -27,7 +27,7 @@ I am also interested in wider topics such as [list to be completed], generalizat
   <br /><small>Presented at Allerton 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>]  
 
 - [Optimal intermittent particle filter](https://arxiv.org/abs/2207.08735)
-<br /><small> <it> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</it></small>
+<br /><small> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
 <br /><small>IEEE Transactions on Signal Processing 2022 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
 - [Optimal measurement times for particle filtering and its application in mobile tumor tracking](https://arxiv.org/abs/2207.08735)
@@ -35,7 +35,7 @@ I am also interested in wider topics such as [list to be completed], generalizat
 <br /><small>Master thesis [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
 - [Optimal measurement budget allocation for particle filtering](https://arxiv.org/abs/2207.08735)
-<br /><small>  Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
+<br /><small> Antoine Aspeel, *Amaury Gouverneur*, Raphaël M. Jungers, and Benoit Macq</small>
 <br /><small>Presented at IEEE International Conference on Image Processing (ICIP) 2020 [<a href="https://arxiv.org/pdf/2207.08735.pdf">pdf</a>] 
 
 
