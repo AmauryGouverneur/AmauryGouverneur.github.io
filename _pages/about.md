@@ -17,7 +17,7 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 **Publications:**
 
 - Thompson sampling regret bounds for contextual bandits with sub-gaussian rewards.  
-    Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J Oechtering, and Mikael Skoglund. 
+    Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J Oechtering, and Mikael Skoglund
     - Presented at ISIT, 2023.
 - 2022 Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J Oechtering, and Mikael Skoglund. An information-theoretic analysis of Bayesian reinforcement learning. In 2022 58th Annual Allerton Conference on Communication, Control, and Computing (Allerton), pages 1–7. IEEE, 2022.
 - 2020 Antoine Aspeel, Amaury Gouverneur, Raphaël M Jungers, and MACQ Benoît. Optimal measurement budget allocation for particle filtering. In 2020 IEEE International Conference on Image Processing (ICIP), pages 1–5. IEEE, 2020.
