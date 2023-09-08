@@ -46,10 +46,14 @@ I am also interested in wider topics such as [list to be completed], generalizat
 
 **Service:**
 
-- Reviewer for Eusipco 2022 and 2023 conferences.
+- Reviewing for Eusipco conferences.
 - Supervised the bachelor theses of: 
-  - Reza Qorbani and Kevin Pettersson on "Investigation of Information-Theoretic Bounds on Generalization Error".
+  - Reza Qorbani and Kevin Pettersson
+  <br /><small> Investigation of Information-Theoretic Bounds on Generalization Error</small>
 - Supervised the master theses of:
-  - Zhen Tian - Anomaly Detection in Application Logs.
-  - Guangze Shi - Privacy leaks from deep linear networks, Information leak via shared gradients in federated learning systems.
-  - Daniel Pérez - Improving Recommender Engines for Video Streaming Platforms with RNNs and Multivariate Data.
+  - Zhen Tian
+  <br /><small> Anomaly Detection in Application Logs </small>
+  - Guangze Shi
+  <br /><small> Privacy leaks from deep linear networks, Information leak via shared gradients in federated learning systems</small>
+  - Daniel Pérez
+  <br /><small>Improving Recommender Engines for Video Streaming Platforms with RNNs and Multivariate Data</small>
