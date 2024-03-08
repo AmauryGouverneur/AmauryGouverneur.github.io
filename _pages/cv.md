@@ -22,16 +22,16 @@ and its application in mobile tumor tracking" under the supervision of Pr. Benoi
 * B.S. in Engineering, École Polytechnique de Louvain, 2015-2018
   * Specialisation in Electrical and Mathematical Engineering
 
-Work experience
+Other experience
 ======
-* 2019 - 2020: Technology Officer
+* 2019 - 2020:
   * Co-founder of *aSmartWorld*, a Belgian startup specializing in collecting, refurbishing, and selling smartphones and tablets across Europe.
-  * Developed an iOS application and automated ERP processes to optimize operations.
+  <!--* Developed an iOS application and automated ERP processes to optimize operations.-->
 
 * Summer 2017: Analyst Intern
   * Deloitte London, Consulting - "Strategy and Operations" Division
-  * Gained hands-on experience in consulting, focusing on innovative insurance best practices and operational excellence research.
-  * Gained valuable exposure to Deloitte's diverse consulting services, spanning Deloitte Digital, Deloitte Ventures, and Doblin innovation consulting.
+  <!--* Gained hands-on experience in consulting, focusing on innovative insurance best practices and operational excellence research.-->
+  <!--* Gained valuable exposure to Deloitte's diverse consulting services, spanning Deloitte Digital, Deloitte Ventures, and Doblin innovation consulting.-->
 
 
 Publications

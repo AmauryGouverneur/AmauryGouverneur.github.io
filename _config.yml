@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "Amaury Gouverneur"
   avatar           : "cropped_profile_picture.jpg"
-  bio              : "PhD student"
+  bio              : "PhD Student at KTH Royal Institute"
   location         : "Stockholm, Sweden"
-  employer         : "KTH Royal Institute"
+  employer         : #"KTH Royal Institute"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F7UOSW4_EgBKnGKTWn6EMf31WczFADlByaahDnOgyhoBEbtXqsbNj_pAkocfPfCI0gxfOjMFFtOADBX2ClwkNmZ-F4N9GY5ZxsAB-Cz5OknTMmWUfc&user=ajb9VxQAAAAJ"
+  googlescholar    : #"https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F7UOSW4_EgBKnGKTWn6EMf31WczFADlByaahDnOgyhoBEbtXqsbNj_pAkocfPfCI0gxfOjMFFtOADBX2ClwkNmZ-F4N9GY5ZxsAB-Cz5OknTMmWUfc&user=ajb9VxQAAAAJ"
   email            : "amauryg@kth.se"
-  researchgate     :  "https://www.researchgate.net/profile/Amaury-Gouverneur"
+  researchgate     :  #"https://www.researchgate.net/profile/Amaury-Gouverneur"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "AmauryGouverneur"
+  github           : #"AmauryGouverneur"
   google_plus      : #changes
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "https://orcid.org/0000-0003-2598-4459"
+  orcid            : #"https://orcid.org/0000-0003-2598-4459"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
