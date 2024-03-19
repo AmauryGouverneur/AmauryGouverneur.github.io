@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 <h3>About</h3>
-I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org) at which I am following the Artificial Intelligence and Autonomous System curriculum.
+I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org) where I am following the Artificial Intelligence and Autonomous System curriculum.
 
-I am currently working as Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
+I am currently a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
 Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html) and a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
 
 My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
@@ -25,9 +25,9 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 <p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Bayesian Reinforcement Learning.</em> Presented at Allerton 2022.  <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
 
-<p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal intermittent particle filter.</em> IEEE Transactions on Signal Processing 2022 <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
+<p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal intermittent particle filter.</em> IEEE Transactions on Signal Processing 2022 <br> <a href="https://arxiv.org/abs/2204.06265">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_intermittent_particle_filter.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9794909">journal pdf</a>  </p>
 
-<p>Amaury Gouverneur, <em>Optimal measurement times for particle filtering and its application in mobile tumor tracking.</em> Master Thesis 2022, Prom.: Benoit Macq <br> <a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem">dial</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> </p>
+<p>Amaury Gouverneur, <em>Optimal measurement times for particle filtering and its application in mobile tumor tracking.</em> Master Thesis 2022, Prom.: Benoit Macq <br> <a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem">dial</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_times_for_particle_filtering_master_thesis.pdf">pdf</a> </p>
 
 <p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal measurement budget allocation for particle filtering.</em> Presented at ICIP 2020 <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
 
