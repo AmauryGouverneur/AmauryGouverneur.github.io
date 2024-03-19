@@ -13,11 +13,13 @@ I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Swede
 
 My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
 
-[//]: <>  (I am also interested in wider topics such as [list to be completed], generalization of learning algorithm, etc.) 
+<a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
 
 
 <h2>Publications</h2>
 <p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems.</em> Prerprint under review, 2024.  <br> <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
+
+<p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards.</em> Presented at ISIT 2023.  <br> <a href="https://arxiv.org/pdf/2304.13593.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10206792">conference pdf</a>  </p>
 
 <!--- [Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems](https://arxiv.org/abs/2403.03361)
   <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
