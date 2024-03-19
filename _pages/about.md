@@ -30,8 +30,8 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 <h3>Teaching</h3>
 
-- [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">Pattern Recognition and Machine Learning, EQ2341, KTH</a>] at KTH - 2020-2024
-- [<a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451">Deep Neural Networks, EP232U</a>] at KTH - Spring 2022
+<p><a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">Pattern Recognition and Machine Learning, EQ2341, KTH</a> at KTH - 2020-2024</p>
+<p><a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451">Deep Neural Networks, EP232U</a> at KTH - Spring 2022 </p>
 
 <h3>Service</h3>
 
