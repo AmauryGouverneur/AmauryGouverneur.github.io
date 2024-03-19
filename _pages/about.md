@@ -7,19 +7,20 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-<h2>About</h2>
-I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Sweden, under the guidance of Professors [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org). Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html) and a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
+<h3>About</h3>
+I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Sweden, under the guidance of Professors [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). I am currently working as Visiting Student Researcher at Stanford University at the Information Science Lab under the supervision of Professor Benjamin Van Roy. My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org). Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html) and a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
 
 My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
 
 <a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
 
 
-<h2>Publications</h2>
+<h3>Publications</h3>
 <p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems.</em> Prerprint under review, 2024.  <br> <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
 <p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards.</em> Presented at ISIT 2023.  <br> <a href="https://arxiv.org/pdf/2304.13593.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/TS_regret_bounds_for_contextual_bandits_with_sub_gaussian_rewards.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10206792">conference pdf</a>  </p>
+
+<p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Bayesian Reinforcement Learning</em> Presented at Allerton 2022.  <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/TS_regret_bounds_for_contextual_bandits_with_sub_gaussian_rewards.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10206792">conference pdf</a>  </p>
 
 <!--- [Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems](https://arxiv.org/abs/2403.03361)
   <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
@@ -47,12 +48,12 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 -->
 
-<h2>Teaching</h2>
+<h3>Teaching</h3>
 
 - [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTH - Spring 2021, 2022, and 2023
 - [<a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451">Deep Learning course for Ericsson</a>] at KTHs - Spring 2022
 
-**Service**
+<h3>Service</h3>
 
 - Reviewing for EUSIPCO (2022-2024)
 - Supervised the bachelor theses of: 
