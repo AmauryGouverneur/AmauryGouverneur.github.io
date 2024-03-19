@@ -20,7 +20,9 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 <p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards.</em> Presented at ISIT 2023.  <br> <a href="https://arxiv.org/pdf/2304.13593.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/TS_regret_bounds_for_contextual_bandits_with_sub_gaussian_rewards.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10206792">conference pdf</a>  </p>
 
-<p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Bayesian Reinforcement Learning</em> Presented at Allerton 2022.  <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
+<p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Bayesian Reinforcement Learning.</em> Presented at Allerton 2022.  <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
+
+<p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal intermittent particle filter.</em> IEEE Transactions on Signal Processing 2022 <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
 
 <!--- [Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems](https://arxiv.org/abs/2403.03361)
   <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
