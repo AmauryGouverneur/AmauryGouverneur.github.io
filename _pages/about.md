@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<h1>About</h1>
+<h2>About</h2>
 I am a doctoral student at KTH Royal Institute of Technology in Stockholm, Sweden, under the guidance of Professors [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org). Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html) and a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
 
 My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
@@ -16,7 +16,7 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 [//]: <>  (I am also interested in wider topics such as [list to be completed], generalization of learning algorithm, etc.) 
 
 
-<h1>Publications</h1>
+<h2>Publications</h2>
 <p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems.</em> Prerprint under review, 2024.  <br> <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
 <!--- [Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems](https://arxiv.org/abs/2403.03361)
@@ -45,7 +45,7 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 -->
 
-<h1>Teaching</h1>
+<h2>Teaching</h2>
 
 - [<a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">EQ2341: Pattern Recognition and Machine Learning</a>] at KTH - Spring 2021, 2022, and 2023
 - [<a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451">Deep Learning course for Ericsson</a>] at KTHs - Spring 2022
