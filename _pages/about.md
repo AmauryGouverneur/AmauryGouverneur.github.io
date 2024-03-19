@@ -29,7 +29,7 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 <p>Amaury Gouverneur, <em>Optimal measurement times for particle filtering and its application in mobile tumor tracking.</em> Master Thesis 2022, Prom.: Benoit Macq <br> <a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem">dial</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_times_for_particle_filtering_master_thesis.pdf">pdf</a> </p>
 
-<p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal measurement budget allocation for particle filtering.</em> Presented at ICIP 2020 <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
+<p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal measurement budget allocation for particle filtering.</em> Presented at ICIP 2020 <br> <a href="https://arxiv.org/pdf/2005.08557.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_budget_allocation_for_particle_filtering.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9190702">conference pdf</a>  </p>
 
 <h3>Teaching</h3>
 
