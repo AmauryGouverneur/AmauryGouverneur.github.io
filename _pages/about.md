@@ -38,10 +38,10 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 <h3>Service</h3>
 
-<p>Reviewing for EUSIPCO (2022-2024)</p>
-<p>Supervised the bachelor theses of: </p>
+<p>Reviewing service for for EUSIPCO (2022-2023)</p>
+<p>Bachelor Thesis Supervision:: </p>
   - Reza Qorbani and Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659">Investigation of Information-Theoretic Bounds on Generalization Error</a>
-<p>Supervised the master theses of</p>
+<p>Master Thesis Supervision:</p>
   - Zhen Tian - <a href="https://aaltodoc.aalto.fi/handle/123456789/119370">Anomaly Detection in Application Logs</a> 
   - Guangze Shi - <a href="https://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=21&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=sv&pid=diva2%3A1728674&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=8498">Privacy leaks from deep linear networks, Information leak via shared gradients in federated learning systems</a>
   - Daniel Pérez - <a href="http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1714150&dswid=-4335">Improving Recommender Engines for Video Streaming Platforms with RNNs and Multivariate Data</a>
