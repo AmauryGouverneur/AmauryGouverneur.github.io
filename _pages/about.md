@@ -19,6 +19,9 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 **Publications**
 
+<p>*Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems.</em> Prerprint under review, 2024.  <br> <a href="https://arxiv.org/abs/2403.03361">arXiv</a> </p>
+
+
 - [Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems](https://arxiv.org/abs/2403.03361)
   <br /><small> *Amaury Gouverneur*, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund</small>
   <br /><small>Under review [<a href="https://arxiv.org/pdf/2304.13593.pdf">pdf</a>] [<a href="citations/thomson_sampling_regret_contextual_bandits_subgaussian.html">cite</a>]</small>
