@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 <h3>About</h3>
-I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org) where I am following jointly the Artificial Intelligence and Autonomous System curriculum.
+I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org) where I am following jointly the Artificial Intelligence and Autonomous System curriculum. Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html) and a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
 
 I am currently a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
-Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html) and a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
+
 
 My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
 
@@ -39,7 +39,7 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 <h3>Service</h3>
 
 <p>Reviewing service for for EUSIPCO (2022-2023)</p>
-<p>Bachelor Thesis Supervision:: </p>
+<p>Bachelor Thesis Supervision: </p>
   - Reza Qorbani and Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659">Investigation of Information-Theoretic Bounds on Generalization Error</a>
 <p>Master Thesis Supervision:</p>
   - Zhen Tian - <a href="https://aaltodoc.aalto.fi/handle/123456789/119370">Anomaly Detection in Application Logs</a> 
