@@ -13,7 +13,7 @@ I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technol
 In 2024, I had the chance to work as a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
 
 
-My research interest lies at the intersection between Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
+My research interests lie at the intersection between Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for bandit problems.
 
 <a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
 
@@ -22,7 +22,7 @@ My research interest lies at the intersection between Information Theory and Rei
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Preprint under review | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
-<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Preprint under review | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Preprint under review | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf">pdf</a> </p>
 
 <p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Preprint under review | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
@@ -45,10 +45,7 @@ My research interest lies at the intersection between Information Theory and Rei
 
 <h3>Service</h3>
 
-<p>Reviewing service for for EUSIPCO (2022-2023)</p>
-<p>Reviewing service for for ICML 2024</p>
-<p>Reviewing service for for ICASSP 2025</p>
-<p>Reviewing service for for ICLR 2025</p>
+<p>Reviewing service for for EUSIPCO (2022-2023), ICML 2024, ICASSP 2025, ICLR 2025</p>
 
 <p>WASP Cluster leader for "Mathematical Foundations of AI other than ML" (2020-2024)</p>
 <p>WASP Cluster leader for "Sequential Decision-Making and Reinforcement Learning" (2024-2025)</p>
