@@ -22,9 +22,9 @@ My research interests lie at the intersection between Information Theory and Rei
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Preprint under review | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
-<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Preprint under review | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Submitted to ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf">pdf</a> </p>
 
-<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Preprint under review | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
+<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Submitted to ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems</em> <br> Presented at FoRLaC Workshop at ICML 2024 | <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
