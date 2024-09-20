@@ -19,17 +19,24 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 
 
 <h3>Publications</h3>
-<p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems.</em> Prerprint under review, 2024.  <br> <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
-<p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards.</em> Presented at ISIT 2023.  <br> <a href="https://arxiv.org/pdf/2304.13593.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/TS_regret_bounds_for_contextual_bandits_with_sub_gaussian_rewards.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10206792">conference pdf</a>  </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> Preprint under review.  <br> <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
-<p>Amaury Gouverneur, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Bayesian Reinforcement Learning.</em> Presented at Allerton 2022.  <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> Preprint under review.  <br> <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
-<p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal intermittent particle filter.</em> IEEE Transactions on Signal Processing 2022 <br> <a href="https://arxiv.org/abs/2204.06265">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_intermittent_particle_filter.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9794909">journal pdf</a>  </p>
+<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> Preprint under review.  <br> <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
-<p>Amaury Gouverneur, <em>Optimal measurement times for particle filtering and its application in mobile tumor tracking.</em> Master Thesis 2022, Prom.: Benoit Macq <br> <a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem">dial</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_times_for_particle_filtering_master_thesis.pdf">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems</em> Presented at FoRLaC Workshop at ICML 2024.  <br> <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
-<p>Antoine Aspeel, Amaury Gouverneur, Raphaël M. Jungers, and Benoit Macq, <em>Optimal measurement budget allocation for particle filtering.</em> Presented at ICIP 2020 <br> <a href="https://arxiv.org/pdf/2005.08557.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_budget_allocation_for_particle_filtering.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9190702">conference pdf</a>  </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards</em> Presented at ISIT 2023.  <br> <a href="https://arxiv.org/pdf/2304.13593.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/TS_regret_bounds_for_contextual_bandits_with_sub_gaussian_rewards.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10206792">conference pdf</a>  </p>
+
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Bayesian Reinforcement Learning</em> Presented at Allerton 2022.  <br> <a href="https://arxiv.org/abs/2207.08735">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353">conference pdf</a>  </p>
+
+<p>Antoine Aspeel, <b>Amaury Gouverneur</b>, Raphaël M. Jungers, and Benoit Macq, <em>Optimal intermittent particle filter</em> IEEE Transactions on Signal Processing 2022 <br> <a href="https://arxiv.org/abs/2204.06265">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_intermittent_particle_filter.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9794909">journal pdf</a>  </p>
+
+<p><b>Amaury Gouverneur</b>, <em>Optimal measurement times for particle filtering and its application in mobile tumor tracking</em> Master Thesis 2022, Prom.: Benoit Macq <br> <a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem">dial</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_times_for_particle_filtering_master_thesis.pdf">pdf</a> </p>
+
+<p>Antoine Aspeel, <b>Amaury Gouverneur</b>, Raphaël M. Jungers, and Benoit Macq, <em>Optimal measurement budget allocation for particle filtering</em> Presented at ICIP 2020 <br> <a href="https://arxiv.org/pdf/2005.08557.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_budget_allocation_for_particle_filtering.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9190702">conference pdf</a>  </p>
 
 <h3>Teaching</h3>
 
@@ -39,9 +46,16 @@ My research interest lies at the confluence of Information Theory and Reinforcem
 <h3>Service</h3>
 
 <p>Reviewing service for for EUSIPCO (2022-2023)</p>
-<p>Bachelor Thesis Supervision: </p>
+<p>Reviewing service for for ICML 2024</p>
+<p>Reviewing service for for ICASSP 2025</p>
+<p>Reviewing service for for ICLR 2025</p>
+
+<p>WASP Cluster leader for "Mathematical Foundations of AI other than ML" (2020-2024)</p>
+<p>WASP Cluster leader for "Sequential Decision-Making and Reinforcement Learning" (2024-2025)</p>
+
+<h3>Bachelor Thesis Supervision: </h3>
   - Reza Qorbani and Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659">Investigation of Information-Theoretic Bounds on Generalization Error</a>
-<p>Master Thesis Supervision:</p>
+<h3>Master Thesis Supervision:</h3>
   - Zhen Tian - <a href="https://aaltodoc.aalto.fi/handle/123456789/119370">Anomaly Detection in Application Logs</a> 
   - Guangze Shi - <a href="https://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=21&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=sv&pid=diva2%3A1728674&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=8498">Privacy leaks from deep linear networks, Information leak via shared gradients in federated learning systems</a>
   - Daniel Pérez - <a href="http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1714150&dswid=-4335">Improving Recommender Engines for Video Streaming Platforms with RNNs and Multivariate Data</a>
