@@ -13,7 +13,7 @@ I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technol
 In 2024, I had the chance to work as a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
 
 
-My research interest lies at the confluence of Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
+My research interest lies at the intersection between Information Theory and Reinforcement Learning. Specifically, I am studying the performance of the Thompson Sampling algorithm for Multi-Armed Bandit Problems and Contextual Bandit Problems.
 
 <a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
 
