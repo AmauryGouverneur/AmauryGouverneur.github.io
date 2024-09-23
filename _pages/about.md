@@ -13,7 +13,9 @@ I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technol
 In 2024, I had the chance to work as a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
 
 
-My research interests lie at the intersection between Reinforcement Learning and Information Theory. Specifically, I am studying the performance of the Thompson Sampling algorithm for bandit problems.
+My research interests lie at the intersection between reinforcement learning and information theory. Specifically, I am studying the performance of the Thompson Sampling algorithm for bandit problems.
+
+I am also interested in talking about other topics in information theory and machine learning. So, please, do not hesitate to contact me for a discussion (amaury.gouverneur@gmail.com).
 
 <a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
 
@@ -40,6 +42,8 @@ My research interests lie at the intersection between Reinforcement Learning and
 
 <h3>Teaching</h3>
 
+<p><a href="https://www.kth.se/student/kurser/kurs/EQ2445?l=en">Project in Multimedia Processing and Analysis, EQ2445, KTH</a> at KTH - 2024</p>
+<p><a href="https://www.kth.se/student/kurser/kurs/EQ2415?l=en">Machine Learning and Data Science, EQ2415, KTH</a> at KTH - 2024</p>
 <p><a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en">Pattern Recognition and Machine Learning, EQ2341, KTH</a> at KTH - 2020-2024</p>
 <p><a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451">Deep Neural Networks, EP232U</a> at KTH - Spring 2022 </p>
 

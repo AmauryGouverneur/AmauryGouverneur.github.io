@@ -83,8 +83,8 @@ author:
   name             : "Amaury Gouverneur"
   avatar           : "cropped_profile_picture.jpg"
   bio              : "PhD Student in Reinforcement Learning"
-  location         : "Stockholm, Sweden"
-  employer         : "KTH Royal Institute of Technology"
+  location         : "KTH, Stockholm"
+  employer         : #""
   pubmed           : 
   googlescholar    : #"https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F7UOSW4_EgBKnGKTWn6EMf31WczFADlByaahDnOgyhoBEbtXqsbNj_pAkocfPfCI0gxfOjMFFtOADBX2ClwkNmZ-F4N9GY5ZxsAB-Cz5OknTMmWUfc&user=ajb9VxQAAAAJ"
   email            : "amauryg@kth.se"
