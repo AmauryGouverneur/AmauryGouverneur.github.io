@@ -15,7 +15,7 @@ In 2024, I had the chance to work as a Visiting Student Researcher at Stanford U
 
 My research interests lie at the intersection between reinforcement learning and information theory. Specifically, I am studying the performance of the Thompson Sampling algorithm for bandit problems.
 
-I am also interested in talking about other topics in information theory and machine learning. So, please, do not hesitate to contact me for a discussion (amaury.gouverneur@gmail.com).
+I am also interested in talking about other topics in information theory and machine learning. So, please, do not hesitate to contact me for a discussion.
 
 <a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
 
