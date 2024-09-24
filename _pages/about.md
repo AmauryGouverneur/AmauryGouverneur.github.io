@@ -8,14 +8,14 @@ redirect_from:
   - /about.html
 ---
 <h3>About</h3>
-I am a PhD student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org) where I am following jointly the Artificial Intelligence and Autonomous System curriculum. Before my academic journey, I completed a double master's degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html) and a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
+I am a PhD student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org), where I am pursuing the joint curriculum in Artificial Intelligence and Autonomous Systems. Before my PhD, I completed a double master's degree in Applied and Computational Mathematics at [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html), as well as a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
 
-In 2024, I had the chance to work as a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
+In 2024, I had the opportunity to work as a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
 
 
-My research interests lie at the intersection between reinforcement learning and information theory. Specifically, I am studying the performance of the Thompson Sampling algorithm for bandit problems.
+My research interests are at the intersection of reinforcement learning and information theory. Specifically, I am studying the performance of the Thompson Sampling algorithm for bandit problems.
 
-I am also interested in talking about other topics in information theory and machine learning. So, please, do not hesitate to contact me for a discussion.
+I am always open to discussing topics in information theory and machine learning, so please feel free to reach out if you would like to connect.
 
 <a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
 
