@@ -51,7 +51,7 @@ I am always open to discussing topics in information theory and machine learning
 
 <p>Reviewing service for for EUSIPCO (2022-2023), ICML 2024, ICASSP 2025, ICLR 2025</p>
 
-<p>WASP Cluster leader for <a href="https://internal.wasp-sweden.org/mathematical-foundations-of-ai-other-than-machine-learning-mfaiml/">Mathematical Foundations of AI other than ML</a> (2020-2024)</p>
+<p>WASP Cluster leader for <a href="https://internal.wasp-sweden.org/mathematical-foundations-of-ai-other-than-machine-learning-mfaiml/" style="text-decoration:none">Mathematical Foundations of AI other than ML</a> (2020-2024)</p>
 <p>WASP Cluster leader for <a href="https://internal.wasp-sweden.org/sdm-rl-ctc/">Sequential Decision-Making and Reinforcement Learning</a> (current)</p>
 
 <h3>Bachelor Thesis Supervision: </h3>
