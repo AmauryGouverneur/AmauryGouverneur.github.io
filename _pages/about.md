@@ -8,14 +8,15 @@ redirect_from:
   - /about.html
 ---
 <h3>About</h3>
-I am a PhD student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org), where I am pursuing the joint curriculum in Artificial Intelligence and Autonomous Systems. Before my PhD, I completed a double master's degree in Applied and Computational Mathematics at [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html), as well as a bachelor's degree in Applied Mathematics and Electrical engineering at École Polytechnique de Louvain.  
+I am a Ph.D. student in Electrical Engineering at KTH Royal Institute of Technology in Stockholm, Sweden, co-advised by [Mikael Skoglund](https://people.kth.se/~skoglund/) and [Tobias Oechtering](https://www.kth.se/profile/oech). My doctoral research is supported by the [WASP Graduate School](https://wasp-sweden.org), where I am pursuing the joint curriculum in Artificial Intelligence and Autonomous Systems. 
 
-In 2024, I had the opportunity to work as a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html). 
+Before starting my Ph.D., I completed a double Master’s degree in Applied and Computational Mathematics from [KTH](https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221) and [École Polytechnique de Louvain](https://uclouvain.be/en/faculties/epl/mathematiques-appliquees.html), and a Bachelor’s degree in Applied Mathematics and Electrical Engineering from École Polytechnique de Louvain.  
 
+In 2024, I had the opportunity to work as a Visiting Student Researcher at Stanford University under the supervision of Professor [Benjamin Van Roy](https://web.stanford.edu/~bvr/index.html).  
 
-My research interests are at the intersection of reinforcement learning and information theory. Specifically, I am studying the performance of the Thompson Sampling algorithm for bandit problems.
+My research interests lie at the intersection of reinforcement learning and information theory. Specifically, I study the performance of the Thompson Sampling algorithm in bandit problems.  
 
-I am always open to discussing topics in information theory and machine learning, so please feel free to reach out if you would like to connect.
+I welcome discussions with anyone interested in topics in information theory and machine learning. Feel free to connect!
 
 <a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2025.pdf">My CV</a>
 
@@ -28,7 +29,7 @@ I am always open to discussing topics in information theory and machine learning
 
 <p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Submitted to ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf">pdf</a> </p>
 
-<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems</em> <br> Presented at FoRLaC Workshop at ICML 2024 | <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems</em> <br> Presented at ICML 2024 (FoRLaC Workshop) | <a href="https://arxiv.org/abs/2403.03361">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf">pdf</a> </p>
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian rewards</em> <br> Presented at ISIT 2023 | <a href="https://arxiv.org/pdf/2304.13593.pdf">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/TS_regret_bounds_for_contextual_bandits_with_sub_gaussian_rewards.pdf">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10206792">conference pdf</a>  </p>
 
