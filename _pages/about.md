@@ -50,14 +50,17 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <h3>Service</h3>
 
-<p>Reviewing service for for EUSIPCO (2022-2023), ICML 2024, ICASSP 2025, ICLR 2025</p>
+<p>Reviewing service for EUSIPCO (2022-2023), ICML 2024, ICASSP 2025, ICLR 2025</p>
 
 <p>WASP Cluster leader for <a href="https://internal.wasp-sweden.org/mathematical-foundations-of-ai-other-than-machine-learning-mfaiml/" style="text-decoration:none">Mathematical Foundations of AI other than ML</a> (2020-2024)</p>
 <p>WASP Cluster leader for <a href="https://internal.wasp-sweden.org/sdm-rl-ctc/">Sequential Decision-Making and Reinforcement Learning</a> (current)</p>
 
 <h3>Bachelor Thesis Supervision: </h3>
   - Reza Qorbani and Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659">Investigation of Information-Theoretic Bounds on Generalization Error</a>
-<h3>Master Thesis Supervision:</h3>
-  - Zhen Tian - <a href="https://aaltodoc.aalto.fi/handle/123456789/119370">Anomaly Detection in Application Logs</a> 
-  - Guangze Shi - <a href="https://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=21&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=sv&pid=diva2%3A1728674&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=8498">Privacy leaks from deep linear networks, Information leak via shared gradients in federated learning systems</a>
-  - Daniel Pérez - <a href="http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1714150&dswid=-4335">Improving Recommender Engines for Video Streaming Platforms with RNNs and Multivariate Data</a>
+<h3>Master Thesis Supervision</h3>
+<ul>
+  <li>Zhen Tian: <a href="https://aaltodoc.aalto.fi/handle/123456789/119370">Anomaly Detection in Application Logs</a></li>
+  <li>Guangze Shi: <a href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1728674">Privacy Leaks from Deep Linear Networks</a></li>
+  <li>Daniel Pérez: <a href="http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1714150">Improving Recommender Engines for Video Streaming Platforms with RNNs</a></li>
+</ul>
+
