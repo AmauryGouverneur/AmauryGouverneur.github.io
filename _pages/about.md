@@ -17,7 +17,7 @@ My research interests are at the intersection of reinforcement learning and info
 
 I am always open to discussing topics in information theory and machine learning, so please feel free to reach out if you would like to connect.
 
-<a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2024.pdf">My CV</a>
+<a href="http://amaurygouverneur.github.io/files/CV_Amaury_Gouverneur_2025.pdf">My CV</a>
 
 
 <h3>Publications (Chronological)</h3>
