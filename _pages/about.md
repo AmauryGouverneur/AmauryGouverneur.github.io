@@ -59,9 +59,9 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <h3>Teaching</h3>
 
-<p><a href="https://www.kth.se/student/kurser/kurs/EQ2445?l=en" style="text-decoration:none">Project in Multimedia Processing and Analysis, EQ2445, KTH</a> at KTH - 2024</p>
-<p><a href="https://www.kth.se/student/kurser/kurs/EQ2415?l=en" style="text-decoration:none">Machine Learning and Data Science, EQ2415, KTH</a> at KTH - 2024</p>
-<p><a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en" style="text-decoration:none">Pattern Recognition and Machine Learning, EQ2341, KTH</a> at KTH - 2020-2024</p>
+<p><a href="https://www.kth.se/student/kurser/kurs/EQ2445?l=en" style="text-decoration:none">Project in Multimedia Processing and Analysis, EQ2445</a> at KTH - 2024</p>
+<p><a href="https://www.kth.se/student/kurser/kurs/EQ2415?l=en" style="text-decoration:none">Machine Learning and Data Science, EQ2415</a> at KTH - 2024</p>
+<p><a href="https://www.kth.se/student/kurser/kurs/EQ2341?l=en" style="text-decoration:none">Pattern Recognition and Machine Learning, EQ2341</a> at KTH - 2020-2024</p>
 <p><a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/samarbete-bakom-unik-spetsutbildning-inom-ai-1.1033451" style="text-decoration:none">Deep Neural Networks, EP232U</a> at KTH - Spring 2022 </p>
 
 <h3>Service</h3>
