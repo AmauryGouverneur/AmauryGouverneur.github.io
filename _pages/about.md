@@ -39,11 +39,13 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <h3>Publications (Chronological)</h3>
 
-<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Accepted at NeurIPS 2024 Workshop on "Bayesian Decision-making and Uncertainty" | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Refined PAC-Bayes Bounds for Offline Bandits</em> <br> Submitted to ISIT 2025 | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
 
-<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Submitted to ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Presented at NeurIPS 2024 Workshop on "Bayesian Decision-making and Uncertainty" | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
 
-<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Submitted to ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Accepted at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf" style="text-decoration:none">pdf</a> </p>
+
+<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Accepted at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems</em> <br> Presented at ICML 2024 (FoRLaC Workshop) | <a href="https://arxiv.org/abs/2403.03361" style="text-decoration:none">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf" style="text-decoration:none">pdf</a> </p>
 
@@ -51,7 +53,7 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Bayesian Reinforcement Learning</em> <br> Presented at Allerton 2022 | <a href="https://arxiv.org/abs/2207.08735" style="text-decoration:none">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_Bayesian_RL.pdf" style="text-decoration:none">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9929353" style="text-decoration:none">conference pdf</a>  </p>
 
-<p>Antoine Aspeel, <b>Amaury Gouverneur</b>, Raphaël M. Jungers, and Benoit Macq, <em>Optimal intermittent particle filter</em> <br> IEEE Transactions on Signal Processing 2022 | <a href="https://arxiv.org/abs/2204.06265" style="text-decoration:none">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_intermittent_particle_filter.pdf" style="text-decoration:none">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9794909" style="text-decoration:none">journal pdf</a>  </p>
+<p>Antoine Aspeel, <b>Amaury Gouverneur</b>, Raphaël M. Jungers, and Benoit Macq, <em>Optimal intermittent particle filter</em> <br> Published in IEEE Transactions on Signal Processing 2022 | <a href="https://arxiv.org/abs/2204.06265" style="text-decoration:none">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/optimal_intermittent_particle_filter.pdf" style="text-decoration:none">pdf</a> | <a href="https://ieeexplore.ieee.org/abstract/document/9794909" style="text-decoration:none">journal pdf</a>  </p>
 
 <p><b>Amaury Gouverneur</b>, <em>Optimal measurement times for particle filtering and its application in mobile tumor tracking</em> <br> Master Thesis 2022, Prom.: Benoit Macq | <a href="https://dial.uclouvain.be/downloader/downloader.php?pid=thesis%3A25377&datastream=PDF_01&cover=cover-mem" style="text-decoration:none">dial</a> | <a href="http://amaurygouverneur.github.io/files/optimal_measurement_times_for_particle_filtering_master_thesis.pdf" style="text-decoration:none">pdf</a> </p>
 
@@ -72,7 +74,7 @@ I welcome discussions with anyone interested in topics in information theory and
 <p>WASP Cluster leader for <a href="https://internal.wasp-sweden.org/sdm-rl-ctc/" style="text-decoration:none">Sequential Decision-Making and Reinforcement Learning</a> (current)</p>
 
 <h3>Bachelor Thesis Supervision: </h3>
-  - Reza Qorbani and Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659" style="text-decoration:none">Investigation of Information-Theoretic Bounds on Generalization Error</a>
+  - Reza Qorbani, Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659" style="text-decoration:none">Investigation of Information-Theoretic Bounds on Generalization Error</a>
 <h3>Master Thesis Supervision</h3>
 <ul>
   <li>Zhen Tian: <a href="https://aaltodoc.aalto.fi/handle/123456789/119370" style="text-decoration:none">Anomaly Detection in Application Logs</a></li>
