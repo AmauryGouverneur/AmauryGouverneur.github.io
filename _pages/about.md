@@ -39,7 +39,7 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <h3>Publications (Chronological)</h3>
 
-<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Refined PAC-Bayes Bounds for Offline Bandits</em> <br> Submitted to ISIT 2025 | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Refined PAC-Bayes Bounds for Offline Bandits</em> <br> Submitted to ISIT 2025 | <a href="http://amaurygouverneur.github.io/files/ISIT_2025_Paper.pdf" style="text-decoration:none">pdf</a> </p>
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Presented at NeurIPS 2024 Workshop on "Bayesian Decision-making and Uncertainty" | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
 
