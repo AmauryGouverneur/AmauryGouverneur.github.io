@@ -78,7 +78,11 @@ Reinforcement Learning Problems</em> <br> Under review | <a href="http://amauryg
 <p>WASP Cluster leader for <a href="https://internal.wasp-sweden.org/sdm-rl-ctc/" style="text-decoration:none">Sequential Decision-Making and Reinforcement Learning</a> (current)</p>
 
 <h3>Bachelor Thesis Supervision: </h3>
-  - Reza Qorbani, Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659" style="text-decoration:none">Investigation of Information-Theoretic Bounds on Generalization Error</a>
+<ul>
+  <li> Reza Qorbani, Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659" style="text-decoration:none">Investigation of Information-Theoretic Bounds on Generalization Error</a></li>
+  <li> Edwin Östlund, Aron Malmborg - Fine-Tuning a GPT Model for Human-Like Chess Playing</li>
+  <li> Tim Persson, Markus Palmheden - Researching GPT Model for Human-Like Chess Playing</li>
+</ul>
 <h3>Master Thesis Supervision</h3>
 <ul>
   <li>Zhen Tian: <a href="https://aaltodoc.aalto.fi/handle/123456789/119370" style="text-decoration:none">Anomaly Detection in Application Logs</a></li>
