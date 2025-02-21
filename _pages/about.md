@@ -43,6 +43,10 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Presented at NeurIPS 2024 Workshop on "Bayesian Decision-making and Uncertainty" | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
 
+<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for
+Reinforcement Learning Problems</em> <br> Under review | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
+
+
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Accepted at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf" style="text-decoration:none">pdf</a> </p>
 
 <p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Accepted at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
