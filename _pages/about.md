@@ -29,6 +29,8 @@ In 2024, I had the opportunity to work as a Visiting Student Researcher at
 under the supervision of Professor 
 <a href="https://web.stanford.edu/~bvr/index.html" style="text-decoration:none">Benjamin Van Roy</a>.  
 
+I am currenly doing a research internship at <a href= "https://www.lynxhedge.se/en/" style="text-decoration:none">Lynx Asset Managementy</a>, applying reinforcement learning to the problem of optimal trade execution. 
+
 My research interests lie at the intersection of reinforcement learning and information theory. Specifically, I study the performance of the Thompson Sampling algorithm in bandit problems.  
 
 I welcome discussions with anyone interested in topics in information theory and machine learning. Feel free to connect!
@@ -39,17 +41,17 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <h3>Publications (Chronological)</h3>
 
-<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Refined PAC-Bayes Bounds for Offline Bandits</em> <br> Submitted to ISIT 2025 | <a href="http://amaurygouverneur.github.io/files/ISIT_2025_Paper.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Refined PAC-Bayes Bounds for Offline Bandits</em> <br> Accepted at ISIT 2025 | <a href="http://amaurygouverneur.github.io/files/ISIT_2025_Paper.pdf" style="text-decoration:none">pdf</a> </p>
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Presented at NeurIPS 2024 Workshop on "Bayesian Decision-making and Uncertainty" | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
 
 <p>Raghav Bongole, <b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for
-Reinforcement Learning Problems</em> <br> Under review | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
+Reinforcement Learning Problems</em> <br> Submitted to ITW 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
 
 
-<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Accepted at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces</em> <br> Presented at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/an_Information_Theoretic_Analysis_of_Thompson_Sampling_with_Infinite_Action_Spaces.pdf" style="text-decoration:none">pdf</a> </p>
 
-<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Accepted at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
+<p>Raghav Bongole, <b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for Reinforcement Learning based on Duality</em> <br> Presented at ICASSP 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
 
 <p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>Chained Information-Theoretic bounds and Tight Regret Rate for Linear Bandit Problems</em> <br> Presented at ICML 2024 (FoRLaC Workshop) | <a href="https://arxiv.org/abs/2403.03361" style="text-decoration:none">arXiv</a> | <a href="http://amaurygouverneur.github.io/files/chained_information_theoretic_bounds.pdf" style="text-decoration:none">pdf</a> </p>
 
