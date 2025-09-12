@@ -17,6 +17,8 @@ My doctoral research is supported by the
 <a href="https://wasp-sweden.org" style="text-decoration:none">WASP Graduate School</a>, 
 where I am pursuing the joint curriculum in Artificial Intelligence and Autonomous Systems. 
 
+My research interests lie at the intersection of reinforcement learning and information theory. Specifically, I study the performance of the Thompson Sampling algorithm in bandit problems.  
+
 Before starting my Ph.D., I completed a double Master’s degree in Applied and Computational Mathematics from 
 <a href="https://www.kth.se/en/studies/master/applied-and-computational-mathematics/msc-applied-and-computational-mathematics-1.344221" style="text-decoration:none">KTH</a> 
 and 
@@ -29,9 +31,9 @@ In 2024, I had the opportunity to work as a Visiting Student Researcher at
 under the supervision of Professor 
 <a href="https://web.stanford.edu/~bvr/index.html" style="text-decoration:none">Benjamin Van Roy</a>.  
 
-In the Spring 2025, I was fortunate to do a research internship at <a href= "https://www.lynxhedge.se/en/" style="text-decoration:none">Lynx Asset Managementy</a>, applying reinforcement learning to the problem of optimal trade execution. 
+In the Spring 2025, I did a research internship at <a href= "https://www.lynxhedge.se/en/" style="text-decoration:none">Lynx Asset Management</a>, applying reinforcement learning to the problem of optimal trade execution. 
 
-My research interests lie at the intersection of reinforcement learning and information theory. Specifically, I study the performance of the Thompson Sampling algorithm in bandit problems.  
+I will be defending my thesis on December 15th.
 
 I welcome discussions with anyone interested in topics in information theory and machine learning. Feel free to connect!
 
