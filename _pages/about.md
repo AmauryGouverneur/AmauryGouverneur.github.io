@@ -29,7 +29,7 @@ In 2024, I had the opportunity to work as a Visiting Student Researcher at
 under the supervision of Professor 
 <a href="https://web.stanford.edu/~bvr/index.html" style="text-decoration:none">Benjamin Van Roy</a>.  
 
-I am currenly doing a research internship at <a href= "https://www.lynxhedge.se/en/" style="text-decoration:none">Lynx Asset Managementy</a>, applying reinforcement learning to the problem of optimal trade execution. 
+In the Spring 2025, I was fortunate to do a research internship at <a href= "https://www.lynxhedge.se/en/" style="text-decoration:none">Lynx Asset Managementy</a>, applying reinforcement learning to the problem of optimal trade execution. 
 
 My research interests lie at the intersection of reinforcement learning and information theory. Specifically, I study the performance of the Thompson Sampling algorithm in bandit problems.  
 
@@ -41,9 +41,9 @@ I welcome discussions with anyone interested in topics in information theory and
 
 <h3>Publications (Chronological)</h3>
 
-<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Refined PAC-Bayes Bounds for Offline Bandits</em> <br> Accepted at ISIT 2025 | <a href="http://amaurygouverneur.github.io/files/ISIT_2025_Paper.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Refined PAC-Bayes Bounds for Offline Bandits</em> <br> Presented at ISIT 2025 | <a href="http://amaurygouverneur.github.io/files/ISIT_2025_Paper.pdf" style="text-decoration:none">pdf</a> </p>
 
-<p><b>Amaury Gouverneur</b>, Borja Rodríguez-Gálvez, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Presented at NeurIPS 2024 Workshop on "Bayesian Decision-making and Uncertainty" | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
+<p><b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandits</em> <br> Presented at NeurIPS 2024 Workshop on "Bayesian Decision-making and Uncertainty" | <a href="http://amaurygouverneur.github.io/files/an_information_theoretic_analysis_of_thompson_sampling_for_logistic_bandits.pdf" style="text-decoration:none">pdf</a> </p>
 
 <p>Raghav Bongole, <b>Amaury Gouverneur</b>, Tobias J. Oechtering, and Mikael Skoglund, <em>Information-Theoretic Minimax Regret Bounds for
 Reinforcement Learning Problems</em> <br> Submitted to ITW 2025 | <a href="http://amaurygouverneur.github.io/files/ICASSP_Paper_Minimax_Duality_RL_final.pdf" style="text-decoration:none">pdf</a> </p>
@@ -84,7 +84,6 @@ Reinforcement Learning Problems</em> <br> Submitted to ITW 2025 | <a href="http:
   <li> Reza Qorbani, Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659" style="text-decoration:none">Investigation of Information-Theoretic Bounds on Generalization Error</a></li>
   <li> Edwin Östlund, Aron Malmborg - Fine-Tuning a GPT Model for Human-Like Chess Playing</li>
   <li> Tim Persson, Markus Palmheden - Researching GPT Model for Human-Like Chess Playing</li>
-  <li><a href="/play-chess/" style="text-decoration:none">▶ Play Chess vs My LLM Demo</a></li>
 </ul>
 <h3>Master Thesis Supervision</h3>
 <ul>
