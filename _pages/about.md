@@ -86,9 +86,11 @@ Reinforcement Learning Problems</em> <br> Submitted to ITW 2025 | <a href="http:
   <li> Reza Qorbani, Kevin Pettersson - <a href="http://kth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=15&af=%5B%5D&searchType=LIST_LATEST&sortOrder2=title_sort_asc&query=&language=en&pid=diva2%3A1736009&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4659" style="text-decoration:none">Investigation of Information-Theoretic Bounds on Generalization Error</a></li>
   <li> Edwin Östlund, Aron Malmborg - Fine-Tuning a GPT Model for Human-Like Chess Playing</li>
   <li> Tim Persson, Markus Palmheden - Researching GPT Model for Human-Like Chess Playing</li>
+  <! --
   <p>
   <a href="/chess-gpt/" style="text-decoration:none"> You can try our Chess-GPT demo</a>
 </p>
+-->
 </ul>
 
 <h3>Master Thesis Supervision</h3>
