@@ -4,7 +4,7 @@ title: "Chess-GPT Demo"
 permalink: /chess-gpt/
 ---
 
-Play a quick game against our LLM-based chess model, developed with my students.
+Play a quick game against our LLM-based chess model, developed with my students.(V1)
 
 <div style="position:relative; width:100%; height:760px; border:0; border-radius:8px; overflow:hidden;">
   <iframe
