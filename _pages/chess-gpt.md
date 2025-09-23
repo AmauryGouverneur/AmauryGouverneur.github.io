@@ -2,6 +2,7 @@
 layout: single
 title: "Chess-GPT Demo"
 permalink: /chess-gpt/
+classes: wide
 ---
 
 <div style="position:relative; width:100%; height:90vh; border:0; border-radius:8px; overflow:hidden;">
