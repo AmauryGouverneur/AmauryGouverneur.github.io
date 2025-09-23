@@ -87,6 +87,9 @@ Reinforcement Learning Problems</em> <br> Submitted to ITW 2025 | <a href="http:
   <li> Edwin Östlund, Aron Malmborg - Fine-Tuning a GPT Model for Human-Like Chess Playing</li>
   <li> Tim Persson, Markus Palmheden - Researching GPT Model for Human-Like Chess Playing</li>
 </ul>
+<p>
+  <a href="/chess-gpt/" style="text-decoration:none">▶ Try the Chess-GPT demo</a> — play a game against our LLM-based chess model.
+</p>
 <h3>Master Thesis Supervision</h3>
 <ul>
   <li>Zhen Tian: <a href="https://aaltodoc.aalto.fi/handle/123456789/119370" style="text-decoration:none">Anomaly Detection in Application Logs</a></li>
