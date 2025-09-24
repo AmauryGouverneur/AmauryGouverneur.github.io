@@ -19,5 +19,5 @@ classes: wide
 
 
 <p style="margin-top:0.5rem;">
-  If the embedded demo doesn’t load, <a href="https://amaurylm-chess-gpt.hf.space" target="_blank" rel="noopener">try the demo directly on Hugging Face</a>.
+  If the demo doesn’t load, <a href="https://amaurylm-chess-gpt.hf.space" target="_blank" rel="noopener">try directly on Hugging Face</a>.
 </p>
