@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess-GPT — Amaury Gouverneur</title>
+  <meta name="description" content="Project note on Chess-GPT, a supervised project on human-like chess with language models">
+  <link rel="canonical" href="https://amaurygouverneur.github.io/writing/chess-gpt/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Chess-GPT — Amaury Gouverneur">
+  <meta property="og:description" content="Project note on Chess-GPT, a supervised project on human-like chess with language models.">
+  <meta property="og:url" content="https://amaurygouverneur.github.io/writing/chess-gpt/">
+  <meta property="og:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Chess-GPT — Amaury Gouverneur">
+  <meta name="twitter:description" content="Project note on Chess-GPT, a supervised project on human-like chess with language models.">
+  <meta name="twitter:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
+  <meta name="theme-color" content="#1c6d80">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="page--article">
+
+  <nav class="masthead">
+    <div class="masthead__inner">
+      <a class="masthead__title" href="/">Amaury Gouverneur</a>
+    </div>
+  </nav>
+
+  <div id="main">
+    <article class="page">
+      <div class="page__content">
+
+        <p class="note-back"><a href="/writing/">Back to research notes</a></p>
+        <header class="article-header">
+          <p class="article-kicker">Project note</p>
+          <h1>Chess-GPT: Human-Like Chess with a Fine-Tuned Language Model</h1>
+          <p class="article-meta">Supervised bachelor thesis project at KTH</p>
+          <p class="article-lede">Chess-GPT grew out of bachelor thesis work by Edwin Ostlund and Aron Malmborg and asked a simple question: can a GPT-style model generate chess that feels recognizably human rather than merely legal?</p>
+          <p class="article-links"><a href="/chess-gpt/">Open the live demo</a> | <a href="https://amaurylm-chess-gpt.hf.space" target="_blank" rel="noopener">Run it on Hugging Face</a></p>
+        </header>
+
+        <div class="article-callout">
+          <p><strong>Short version.</strong> Chess is a clean sequential decision-making problem, and this project explored whether autoregressive models trained on move sequences can capture enough structure, style, and imperfection to produce play that feels human.</p>
+        </div>
+
+        <h2>Why this project is interesting</h2>
+
+        <p>Chess is a natural sequential decision-making problem, but it is also a clean setting for asking whether autoregressive models can learn useful structure from move sequences alone. That makes it a good test case for bridging language modeling and strategic behavior.</p>
+
+        <p>What makes Chess-GPT more interesting than a standard chess engine is the goal. The question is not only whether the model can produce legal or strong moves, but whether it can produce play that feels recognizably human in style, pacing, and mistakes.</p>
+
+        <h2>What the project explored</h2>
+
+        <ul>
+          <li>Representing chess games as token sequences suitable for GPT-style modeling.</li>
+          <li>Fine-tuning a language model on chess move data.</li>
+          <li>Evaluating generated play with an emphasis on human-like behavior, not only raw engine strength.</li>
+          <li>Turning the result into an interactive demo that can be tested directly in the browser.</li>
+        </ul>
+
+        <h2>Why it fits my broader interests</h2>
+
+        <p>This project is more applied than my core work in theoretical reinforcement learning, but the connection is direct. It still centers on sequential decisions, model behavior over long horizons, and the relationship between predictive modeling and the quality of the resulting actions.</p>
+
+        <h2>Public demo</h2>
+
+        <p>The public demo makes the project easy to inspect without digging through a thesis or repository first. It is a useful showcase because visitors can immediately see whether the model behaves coherently and whether the "human-like" framing feels convincing in practice.</p>
+
+        <p><a href="/chess-gpt/">Open the embedded demo</a> if you want to try it from this site, or <a href="https://amaurylm-chess-gpt.hf.space" target="_blank" rel="noopener">launch it directly on Hugging Face</a>.</p>
+
+        <h2>What I would expand next</h2>
+
+        <p>This note is a first project overview. The natural next additions would be a description of the training setup, the dataset construction, the evaluation criteria, and concrete game examples showing where the model looks convincingly human and where it breaks down.</p>
+
+      </div>
+    </article>
+
+  </div>
+
+  <div class="page__footer">
+    <footer>
+      &copy; 2026 Amaury Gouverneur
+    </footer>
+  </div>
+
+</body>
+</html>
