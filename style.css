@@ -146,6 +146,46 @@ a:hover { text-decoration: underline; }
 .page__footer a { color: #7a8288; }
 
 /* ----------------------------------------------------------
+   In-page section navigation
+   ---------------------------------------------------------- */
+
+.page-nav {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 1.8em;
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid #f2f2f4;
+  font-size: 0.875em;
+}
+
+.page-nav a {
+  color: #7a8288;
+  text-decoration: none;
+}
+
+.page-nav a:hover {
+  color: #494e52;
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------------
+   Publication venue badge and description
+   ---------------------------------------------------------- */
+
+.pub-venue {
+  font-size: 0.875em;
+  font-weight: 600;
+  color: #494e52;
+}
+
+.pub-desc {
+  display: block;
+  font-size: 0.875em;
+  color: #7a8288;
+  margin-top: 0.2em;
+}
+
+/* ----------------------------------------------------------
    Wide layout (chess-gpt — no sidebar, full width)
    ---------------------------------------------------------- */
 
