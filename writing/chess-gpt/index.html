@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chess-GPT — Amaury Gouverneur</title>
-  <meta name="description" content="Project note on Chess-GPT, a supervised project on human-like chess with language models">
+  <title>Chess-GPT: Teaching a Transformer to Play Chess — Amaury Gouverneur</title>
+  <meta name="description" content="Chess-GPT: a transformer trained to play chess from scratch using only human game data, supervised bachelor's thesis at KTH.">
   <link rel="canonical" href="https://amaurygouverneur.github.io/writing/chess-gpt/">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Chess-GPT — Amaury Gouverneur">
-  <meta property="og:description" content="Project note on Chess-GPT, a supervised project on human-like chess with language models.">
+  <meta property="og:title" content="Chess-GPT: Teaching a Transformer to Play Chess — Amaury Gouverneur">
+  <meta property="og:description" content="Chess-GPT: a transformer trained to play chess from scratch using only human game data, supervised bachelor's thesis at KTH.">
   <meta property="og:url" content="https://amaurygouverneur.github.io/writing/chess-gpt/">
   <meta property="og:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Chess-GPT — Amaury Gouverneur">
-  <meta name="twitter:description" content="Project note on Chess-GPT, a supervised project on human-like chess with language models.">
+  <meta name="twitter:title" content="Chess-GPT: Teaching a Transformer to Play Chess — Amaury Gouverneur">
+  <meta name="twitter:description" content="Chess-GPT: a transformer trained to play chess from scratch using only human game data, supervised bachelor's thesis at KTH.">
   <meta name="twitter:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
   <meta name="theme-color" content="#1c6d80">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -32,51 +32,132 @@
     <article class="page">
       <div class="page__content">
 
-        <p class="note-back"><a href="/writing/">Back to research notes</a></p>
+        <p class="note-back"><a href="/writing/">Back to notes</a></p>
         <header class="article-header">
           <p class="article-kicker">Project note</p>
-          <h1>Chess-GPT: Human-Like Chess with a Fine-Tuned Language Model</h1>
-          <p class="article-meta">Supervised bachelor thesis project at KTH</p>
-          <p class="article-lede">Chess-GPT grew out of bachelor thesis work by Edwin Ostlund and Aron Malmborg and asked a simple question: can a GPT-style model generate chess that feels recognizably human rather than merely legal?</p>
-          <p class="article-links"><a href="/chess-gpt/">Open the live demo</a> | <a href="https://amaurylm-chess-gpt.hf.space" target="_blank" rel="noopener">Run it on Hugging Face</a></p>
+          <h1>Chess-GPT: Teaching an LLM to Play Chess</h1>
+          <p class="article-meta">Mar 27, 2025 &middot; Supervised bachelor&rsquo;s thesis by Aron Malmborg &amp; Edwin &Ouml;stlund at KTH</p>
         </header>
 
-        <div class="article-callout">
-          <p><strong>Short version.</strong> Chess is a clean sequential decision-making problem, and this project explored whether autoregressive models trained on move sequences can capture enough structure, style, and imperfection to produce play that feels human.</p>
-        </div>
+        <p>
+          Last year I supervised a bachelor&rsquo;s thesis project by Aron Malmborg and Edwin &Ouml;stlund at KTH, where they trained a transformer to play chess from scratch using only human game data. The result is <strong>Chess-GPT</strong>, a model that learns both the rules and strategy of chess purely through next-move prediction, with no explicit programming of chess knowledge whatsoever. You can <a href="https://amaurygouverneur.github.io/chess-gpt/" target="_blank">play against it in your browser</a>.
+        </p>
 
-        <h2>Why this project is interesting</h2>
+        <p>
+          The project builds directly on <a href="https://adamkarvonen.github.io/machine_learning/2024/01/03/chess-world-models.html" target="_blank">Adam Karvonen&rsquo;s Chess-GPT work</a>, which showed that a transformer trained on PGN strings can learn an internal representation of the board state. Aron and Edwin&rsquo;s focus was somewhat different: rather than probing the model&rsquo;s internal representations, they were primarily interested in the <em>playing style</em> of the resulting model, and whether it would end up resembling human play more than existing chess engines like Stockfish.
+        </p>
 
-        <p>Chess is a natural sequential decision-making problem, but it is also a clean setting for asking whether autoregressive models can learn useful structure from move sequences alone. That makes it a good test case for bridging language modeling and strategic behavior.</p>
+        <h2>Setup</h2>
 
-        <p>What makes Chess-GPT more interesting than a standard chess engine is the goal. The question is not only whether the model can produce legal or strong moves, but whether it can produce play that feels recognizably human in style, pacing, and mistakes.</p>
+        <p>
+          Chess-GPT is a GPT-2-style decoder-only transformer trained to predict the next move in a sequence of chess moves in <a href="https://en.wikipedia.org/wiki/Algebraic_notation_(chess)" target="_blank">SAN notation</a>. The key difference from Karvonen&rsquo;s approach is the tokenisation scheme: rather than character-level tokens, each move is treated as a single token. This reduces the vocabulary to roughly 1,855 tokens and lets the model focus on game structure rather than spending capacity learning how chess move notation is spelt.
+        </p>
 
-        <h2>What the project explored</h2>
+        <p>Two model sizes were trained, both with 8 attention heads and a 512-dimensional model:</p>
 
-        <ul>
-          <li>Representing chess games as token sequences suitable for GPT-style modeling.</li>
-          <li>Fine-tuning a language model on chess move data.</li>
-          <li>Evaluating generated play with an emphasis on human-like behavior, not only raw engine strength.</li>
-          <li>Turning the result into an interactive demo that can be tested directly in the browser.</li>
-        </ul>
+        <table>
+          <thead>
+            <tr><th>Model</th><th>Layers</th><th>Parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Chess-GPT-small</td><td>8</td><td>26M</td></tr>
+            <tr><td>Chess-GPT-medium</td><td>16</td><td>52M</td></tr>
+          </tbody>
+        </table>
 
-        <h2>Why it fits my broader interests</h2>
+        <p>
+          Training data came from the <a href="https://database.lichess.org/" target="_blank">Lichess open database</a>: 16 million human games with a mean player Elo of roughly 1650. The models were trained with AdamW and cosine annealing, with a context window of 256 tokens (enough for ~85 full moves, covering nearly all games in the dataset).
+        </p>
 
-        <p>This project is more applied than my core work in theoretical reinforcement learning, but the connection is direct. It still centers on sequential decisions, model behavior over long horizons, and the relationship between predictive modeling and the quality of the resulting actions.</p>
+        <h2>Learning the rules</h2>
 
-        <h2>Public demo</h2>
+        <p>
+          One of the more striking results is how quickly the model picks up legality. After just 2,000 gradient steps, a tiny fraction of training, Chess-GPT-medium already plays legal moves more than 90% of the time. By the end of training it reaches 99.2% &plusmn; 0.1% on random out-of-distribution positions.
+        </p>
 
-        <p>The public demo makes the project easy to inspect without digging through a thesis or repository first. It is a useful showcase because visitors can immediately see whether the model behaves coherently and whether the "human-like" framing feels convincing in practice.</p>
+        <figure style="margin: 1.6em 0;">
+          <img src="/images/chess-gpt-legal-moves.svg" alt="Rate of legal moves vs training step" style="width: 100%; display: block;">
+          <figcaption style="font-size: 0.85em; color: #828282; margin-top: 0.5em;">Rate of legal moves as a function of training step (log scale).</figcaption>
+        </figure>
 
-        <p><a href="/chess-gpt/">Open the embedded demo</a> if you want to try it from this site, or <a href="https://amaurylm-chess-gpt.hf.space" target="_blank" rel="noopener">launch it directly on Hugging Face</a>.</p>
+        <p>
+          This suggests that the surface rules of chess (which piece can go where, what constitutes a legal move) are relatively easy to absorb from raw statistics, without any prior structure. What is harder, and where the model still falls short of human-level generalisation, is reliably handling the tail of unusual positions.
+        </p>
 
-        <h2>What I would expand next</h2>
+        <h2>How well does it play?</h2>
 
-        <p>This note is a first project overview. The natural next additions would be a description of the training setup, the dataset construction, the evaluation criteria, and concrete game examples showing where the model looks convincingly human and where it breaks down.</p>
+        <p>
+          Performance was measured by playing 1,000 games against Stockfish at its lowest skill level (Stockfish-0), then computing an Elo estimate from the win rate, anchored to an assumed Elo of 1300 for Stockfish-0.
+        </p>
+
+        <figure style="margin: 1.6em 0;">
+          <img src="/images/chess-gpt-elo.svg" alt="Elo vs. Stockfish-0 as a function of training step" style="width: 100%; display: block;">
+          <figcaption style="font-size: 0.85em; color: #828282; margin-top: 0.5em;">Elo vs. Stockfish-0 as a function of training step.</figcaption>
+        </figure>
+
+        <table>
+          <thead>
+            <tr><th>Model</th><th>Elo</th><th>Win rate vs. Stockfish-0</th><th>Legal move rate</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Chess-GPT-small</td><td>1121 &plusmn; 25</td><td>25%</td><td>98.7%</td></tr>
+            <tr><td>Chess-GPT-medium</td><td>1198 &plusmn; 22</td><td>36%</td><td>99.2%</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          An Elo around 1200 is a solid casual club player, respectable for a model with no hard-coded chess knowledge. Looking at move quality more carefully, the typical Chess-GPT move is actually <em>slightly better</em> than Stockfish-0&rsquo;s and comparable to the human games in the dataset (median centipawn loss of &minus;11 cp vs. &minus;16 cp for humans and &minus;24 cp for Stockfish-0). The problem is in the tail: Chess-GPT blunders at a 14% rate, the same as Stockfish-0 and higher than the 11% seen in human games. The model loses games not from chronic mediocrity but from occasional catastrophic mistakes.
+        </p>
+
+        <h2>Does it play like a human?</h2>
+
+        <p>
+          This was the most interesting question, and the answer is a surprising <em>no</em>. To measure playing style, Aron and Edwin extracted move-frequency distributions from 100 games each of Chess-GPT, Stockfish-0, and human players, then computed pairwise Jensen-Shannon divergences.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>Comparison</th><th>Token JS-div.</th><th>Bigram JS-div.</th><th>Trigram JS-div.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Humans vs. Stockfish</td><td>0.14</td><td>0.42</td><td>0.74</td></tr>
+            <tr><td>Humans vs. Chess-GPT</td><td>0.26</td><td>0.62</td><td>0.78</td></tr>
+            <tr><td>Stockfish vs. Chess-GPT</td><td>0.28</td><td>0.66</td><td>0.81</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          Chess-GPT ends up <em>further</em> from both humans and Stockfish than they are from each other, despite being trained exclusively on human games. Stockfish, which introduces artificial blunders to regulate its skill level, is actually closer to human play than Chess-GPT is. The model has developed its own idiosyncratic style, the source of which is unclear.
+        </p>
+
+        <p>
+          One hypothesis is that the model&rsquo;s style reflects some strong inductive bias in its architecture or the particular patterns that are most useful for next-move prediction. Understanding what drives this divergence would require the kind of probing and activation analysis that Karvonen did, which would make a natural extension of this project.
+        </p>
+
+        <h2>Play against it</h2>
+
+        <p>
+          Aron and Edwin put together a browser demo so you can play against Chess-GPT yourself. It&rsquo;s unlikely to beat a serious club player, but it plays interesting chess and occasionally pulls off moves that feel unexpectedly creative. Give it a try:
+        </p>
+
+        <p><strong><a href="https://amaurygouverneur.github.io/chess-gpt/" target="_blank">&#8594; Play Chess-GPT in your browser</a></strong></p>
+
+        <h2>What&rsquo;s next</h2>
+
+        <p>
+          The most natural extension is to add a reinforcement learning step after pre-training, rewarding wins rather than just next-move prediction accuracy. Because the model already internalises the rules and something of strategy, the RL fine-tuning should be far cheaper than training an RL chess agent from scratch, similar in spirit to how RLHF works on top of pre-trained language models.
+        </p>
+
+        <p>
+          Another direction is mechanistic interpretability. Karvonen showed that linear probes on Chess-GPT&rsquo;s residual stream can reconstruct the board state with up to 99.6% accuracy, and that erasing a piece from the activation causes the model to treat it as absent when generating subsequent moves. It would be interesting to run the same analysis on Chess-GPT and see whether the internal board representation differs between the two tokenisation schemes, and whether probing could shed light on why the playing style diverges so strongly from human games.
+        </p>
+
+        <p>
+          The full write-up is available as a PDF: <a href="/files/aron_edwin_kex.pdf" target="_blank">Chess-GPT: A Chess-Playing Transformer Model</a> (Malmborg &amp; &Ouml;stlund, KTH, 2025).
+        </p>
 
       </div>
     </article>
-
   </div>
 
   <div class="page__footer">
