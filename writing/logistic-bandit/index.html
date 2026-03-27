@@ -63,7 +63,15 @@
         </p>
 
         <p>
-          which measures how well the action space aligns, in the worst case, with the parameter space. The goal is to learn which action is best while minimising cumulative regret. This is a natural model for click-through rate prediction, personalised recommendation, and clinical trials with binary outcomes. The logistic function is everywhere in practice. So why was the theory stuck?
+          which measures how well the action space aligns, in the worst case, with the parameter space. The goal is to learn which action is best while minimising cumulative regret.
+        </p>
+
+        <p>
+          Logistic bandits are a natural model whenever the feedback is binary but depends on features. In a recommender system, an action can represent an item or a ranking policy, and the reward is whether the user clicks or not. In click-through-rate prediction and personalised advertising, the learner chooses which content to show and observes a yes/no response. Similar models also appear in spam email detection, where one wants to classify messages using contextual features, and in medical decision problems with binary outcomes such as success or failure of a treatment.
+        </p>
+
+        <p>
+          In all of these examples, the logistic link is a standard way of turning a score $\langle a, \theta \rangle$ into a probability. So logistic bandits are not an artificial variant of the linear bandit problem: they are one of the canonical models for sequential decision-making with binary rewards. That is exactly why it was so striking that the theory remained stuck for so long.
         </p>
 
         <h2>The slope problem</h2>
