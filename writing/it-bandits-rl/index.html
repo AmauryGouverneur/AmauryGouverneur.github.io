@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Under Uncertainty: An Information-Theoretic View of Bandits and RL — Amaury Gouverneur</title>
+  <meta name="description" content="A non-technical introduction to the information-theoretic framework behind my thesis: bandits, regret, Thompson Sampling, and the information ratio.">
+  <link rel="canonical" href="https://amaurygouverneur.github.io/writing/it-bandits-rl/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Learning Under Uncertainty: An Information-Theoretic View of Bandits and RL — Amaury Gouverneur">
+  <meta property="og:description" content="A non-technical introduction to the information-theoretic framework behind my thesis: bandits, regret, Thompson Sampling, and the information ratio.">
+  <meta property="og:url" content="https://amaurygouverneur.github.io/writing/it-bandits-rl/">
+  <meta property="og:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learning Under Uncertainty: An Information-Theoretic View of Bandits and RL — Amaury Gouverneur">
+  <meta name="twitter:description" content="A non-technical introduction to the information-theoretic framework behind my thesis: bandits, regret, Thompson Sampling, and the information ratio.">
+  <meta name="twitter:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
+  <meta name="theme-color" content="#1c6d80">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+</head>
+<body class="page--article">
+
+  <nav class="masthead">
+    <div class="masthead__inner">
+      <a class="masthead__title" href="/">Amaury Gouverneur</a>
+    </div>
+  </nav>
+
+  <div id="main">
+    <article class="page">
+      <div class="page__content">
+
+        <p class="note-back"><a href="/writing/">Back to notes</a></p>
+        <header class="article-header">
+          <p class="article-kicker">Research note</p>
+          <h1>Learning Under Uncertainty: An Information-Theoretic View of Bandits and Reinforcement Learning</h1>
+          <p class="article-meta">Mar 27, 2026 &middot; A non-technical introduction to the framework behind my thesis</p>
+        </header>
+
+        <p>
+          My thesis is titled <a href="https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A2015738&dswid=-4587" target="_blank"><em>An Information-Theoretic Approach to Bandits and Reinforcement Learning</em></a>. This post explains what that means: what bandits are, why information theory is the right language for studying them, what the key ideas in the framework are, and how my papers extend it to settings where the existing theory broke down.
+        </p>
+
+        <h2>The explore&ndash;exploit dilemma</h2>
+
+        <p>
+          Many real problems require making decisions repeatedly, under uncertainty, where each decision both produces a payoff and reveals information about the world. A recommendation system chooses which article to show a user, learning from whether they click. A drug trial allocates patients to treatments, updating its beliefs about efficacy as data arrives. A trading system decides which order to place, weighing the benefit of fast execution against learning about market impact.
+        </p>
+
+        <p>
+          All of these share a common structure: the agent must balance <em>exploration</em>, taking actions to learn more, against <em>exploitation</em>, taking actions that look best given what is already known. Explore too little and you settle on a suboptimal action without realising better ones exist. Explore too much and you waste time on actions you have already identified as inferior. This is the explore&ndash;exploit dilemma, and it is central to every sequential decision problem.
+        </p>
+
+        <figure style="max-width: 320px; margin: 2em auto;">
+          <img src="/images/explore-exploit-meme.png" alt="The explore–exploit dilemma: two buttons labeled Explore and Exploit" style="width: 100%; display: block; border-radius: 4px;">
+          <figcaption style="text-align: center;">The explore&ndash;exploit dilemma, as experienced by most RL practitioners.</figcaption>
+        </figure>
+
+        <p>
+          To study this dilemma formally, researchers use mathematical models. The simplest is the <em>multi-armed bandit</em>: an agent repeatedly chooses among a fixed set of actions (arms), each yielding a reward drawn from an unknown distribution. The agent&rsquo;s goal is to maximise cumulative reward, or equivalently to minimise <em>regret</em>, the total reward lost by not always choosing the best arm. Despite its simplicity, the bandit model captures the essence of learning from evaluative feedback and serves as the theoretical foundation for more complex forms of sequential decision-making.
+        </p>
+
+        <p>
+          Reinforcement learning extends this to settings where actions influence future states, not just immediate rewards. Choosing when to change lanes affects not only what happens now but which traffic situations arise later. The explore&ndash;exploit dilemma deepens: you must also reason about the long-term value of the information you gather.
+        </p>
+
+        <h2>Measuring performance: regret</h2>
+
+        <p>
+          The standard measure of an algorithm&rsquo;s performance in bandit and RL problems is <em>regret</em>: the difference between the cumulative reward of an oracle who always plays the optimal action and the cumulative reward the algorithm actually achieved. An algorithm that never learns has regret that grows linearly in the number of rounds. A good algorithm has regret that grows as $\sqrt{T}$, meaning it identifies the best action quickly and exploits it, with the cost of exploration amortised over time.
+        </p>
+
+        <p>
+          The goal of bandit theory is to design algorithms that achieve sublinear regret, and to prove lower bounds that characterise how small regret can possibly be. Understanding the gap between what is achievable and what is optimal requires a rigorous language for measuring how difficult a problem is, and this is where information theory enters.
+        </p>
+
+        <h2>Information theory as a tool for learning</h2>
+
+        <p>
+          Information theory was originally developed by Claude Shannon in the late 1940s to study how much data can be communicated reliably over noisy channels. Its central objects, entropy, mutual information, KL divergence, provide a rigorous language for measuring uncertainty and quantifying how much is learned from an observation.
+        </p>
+
+        <p>
+          The connection to learning problems is natural. Before any interaction, the agent is uncertain about which arm is best. The uncertainty is captured by the <em>entropy</em> of the optimal arm under the prior distribution: the more uniformly plausible all arms are, the higher the entropy, the harder the problem. As the agent collects rewards, it gains information, the <em>mutual information</em> between the observed data and the identity of the optimal arm grows, and its uncertainty decreases.
+        </p>
+
+        <p>
+          This framing makes precise the informal idea that exploration should be efficient: a good algorithm should not spend more regret than the information it gains justifies. Formalising this trade-off leads directly to the framework I build on in my thesis.
+        </p>
+
+        <h2>The Russo&ndash;Van Roy framework: the information ratio</h2>
+
+        <p>
+          The key framework for my thesis was introduced by Russo and Van Roy in 2016.<sup><a href="#fn1" id="ref1">1</a></sup> Their central observation is that one can relate the Bayesian regret of a learning algorithm directly to two quantities: how much uncertainty existed at the start (the prior entropy of the optimal arm), and how efficiently the algorithm converts each round of interaction into information about the optimal arm.
+        </p>
+
+        <p>
+          They formalise this through the <em>information ratio</em> $\Psi_t$, defined at each round as:
+        </p>
+
+        <blockquote>
+          <p>$$\Psi_t = \frac{(\text{expected instantaneous regret})^2}{\text{information gained about the optimal arm}}$$</p>
+        </blockquote>
+
+        <p>
+          The numerator is the cost of the current action, how suboptimal it is on average. The denominator is the benefit, how much the observation reduces uncertainty about which arm is best. If this ratio is bounded by some constant $\Gamma$, then the cumulative Bayesian regret over $T$ rounds satisfies:
+        </p>
+
+        <blockquote>
+          <p>$$\mathbb{E}[\mathrm{Regret}(T)] \leq \sqrt{\Gamma \cdot T \cdot H(A^*)}$$</p>
+        </blockquote>
+
+        <p>
+          where $H(A^*)$ is the prior entropy of the optimal arm. The bound is remarkably clean: regret grows as $\sqrt{T}$ (unavoidable), proportionally to how uncertain you were at the start (also unavoidable), and proportionally to $\sqrt{\Gamma}$, the inefficiency of the algorithm in converting regret into learning.
+        </p>
+
+        <p>
+          An algorithm with a small information ratio is one that never incurs regret without learning something. It is, in a precise sense, making good use of every observation.
+        </p>
+
+        <h2>Thompson Sampling: an algorithm with a naturally small information ratio</h2>
+
+        <p>
+          Once we have the information ratio as the key quantity, a natural question is: which algorithms have small information ratios? This is where Thompson Sampling enters the picture.
+        </p>
+
+        <p>
+          Thompson Sampling, originally proposed by William Thompson in 1933 and rediscovered empirically in 2011,<sup><a href="#fn2" id="ref2">2</a></sup> is conceptually simple. At each round, instead of point-estimating which arm is best, the agent maintains a full posterior distribution over the model parameters. It then acts by sampling a plausible world from this posterior and playing the action that would be optimal in that world.
+        </p>
+
+        <p>
+          This is neither greedy (always play the current best estimate) nor uniformly exploratory (try all arms equally). It is something more principled: exploration as a direct consequence of uncertainty. The agent explores precisely because it is uncertain, and it stops exploring as its posterior concentrates on the true parameter.
+        </p>
+
+        <p>
+          Russo and Van Roy showed that Thompson Sampling has a provably bounded information ratio. The argument is elegant: because Thompson Sampling samples its action from the same distribution as the optimal arm under the posterior, any regret it incurs reflects genuine uncertainty about which arm is best, and that uncertainty is precisely what gets resolved by observing the reward. The two sides of the ratio are fundamentally coupled, and neither can dominate the other by too much.
+        </p>
+
+        <p>
+          For a standard multi-armed bandit with $|\mathcal{A}|$ arms, the information ratio of Thompson Sampling is bounded by $2|\mathcal{A}|$, yielding a regret bound of $O(\sqrt{|\mathcal{A}|\, T \log |\mathcal{A}|})$. This recovers known optimal rates and provides a clean proof via the information-ratio machinery.
+        </p>
+
+        <h2>What the framework leaves open</h2>
+
+        <p>
+          The Russo&ndash;Van Roy framework is powerful and general, but in its original form it leaves important questions unanswered. My thesis addresses several of them.
+        </p>
+
+        <p>
+          The regret bound depends on the <em>entropy of the optimal arm</em>. For a finite set of arms this is at most $\log |\mathcal{A}|$, which is fine. But for <em>continuous action spaces</em>, where the action set is a ball in $\mathbb{R}^d$, this entropy is infinite. The original framework simply does not apply. Yet continuous action spaces arise naturally in linear bandits, where actions are feature vectors and rewards are linear functions of an unknown parameter. A different proof technique is needed.
+        </p>
+
+        <p>
+          The framework also does not immediately handle <em>contextual bandits</em>, where a context (user features, current state) is observed at each round and the optimal action depends on it. The identity of the optimal arm changes every round, so the information ratio as originally defined is not the right object to analyse.
+        </p>
+
+        <p>
+          And when rewards are not sub-Gaussian but follow a <em>nonlinear model</em>, such as the logistic model for binary outcomes, the information ratio can in principle depend badly on the model&rsquo;s parameters. Previous analyses produced bounds that scaled exponentially with the logistic slope, which is both theoretically unsatisfying and empirically wrong.
+        </p>
+
+        <h2>My contributions: extending the framework</h2>
+
+        <p>
+          My papers address each of these limitations, extending the information-theoretic framework to richer and more structured settings.
+        </p>
+
+        <p>
+          <strong>Linear bandits with continuous action spaces (Papers A &amp; B).</strong> When the action set is a compact subset of $\mathbb{R}^d$ and rewards are linear in the parameter, the prior entropy of the optimal arm is infinite. The fix is to work with a quantised approximation of the optimal arm at resolution $\varepsilon$, paying an additive approximation error of $\varepsilon T$ in regret. The information ratio of Thompson Sampling on this compressed problem is bounded by the problem dimension $d$, exploiting the fact that similar actions give similar rewards, so you only need to resolve uncertainty at scale $\varepsilon$. Optimising over $\varepsilon$ recovers the near-optimal rate $O(d\sqrt{T} \log T)$ and extends it to general continuous action spaces for the first time.
+        </p>
+
+        <div class="paper-box">
+          <strong>Papers A &amp; B</strong>
+          &ldquo;An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces&rdquo; (ICASSP 2025) and &ldquo;Chained Information-Theoretic Bounds and Tight Regret Rate for Linear Bandit Problems&rdquo; (under revision, IEEE Trans. Information Theory; ICML 2024 Workshop on Foundations of RL and Control).
+        </div>
+
+        <p>
+          <strong>Contextual bandits with general rewards (Paper C).</strong> When a context is observed before each decision, the right object is the <em>lifted information ratio</em>, which conditions both the regret and the information gain on the observed context. This captures the fact that the optimal arm changes each round: what matters is how much the observation reduces uncertainty about the <em>model parameter</em> $\theta$, not directly about the optimal arm. Paper C extends this analysis to sub-Gaussian and bounded rewards, generalising a result of Neu et al. that covered only binary outcomes, and provides simplified proofs using classical information-theoretic identities.
+        </p>
+
+        <div class="paper-box">
+          <strong>Paper C</strong>
+          &ldquo;Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian Rewards.&rdquo; IEEE International Symposium on Information Theory (ISIT 2023).
+        </div>
+
+        <p>
+          <strong>Logistic bandits: resolving a decade-old conjecture (Paper D).</strong> The logistic bandit is the natural model for binary rewards, click or no click, success or failure, with reward probability given by the logistic function of the arm&ndash;parameter inner product. All prior regret bounds scaled exponentially with the logistic slope $\sigma$, which is backwards: larger $\sigma$ makes the problem easier, not harder. Dong &amp; Van Roy had conjectured in 2018 that the Thompson Sampling information ratio should depend only on the dimension $d$, independently of $\sigma$. Paper D proves this conjecture. The key idea is to lower-bound the information gain using the <em>variance</em> of the reward probability rather than its expectation, and to show that the resulting ratio of variances is monotone in $\sigma$ and converges to a universal constant in the limit $\sigma \to \infty$. The resulting bound is $O\!\left(\frac{d}{\kappa}\sqrt{T} \log\frac{\kappa T}{d}\right)$, only logarithmic in $\sigma$ and independent of the number of actions.
+        </p>
+
+        <div class="paper-box">
+          <strong>Paper D</strong>
+          &ldquo;An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandit Problems.&rdquo; <em>Transactions on Machine Learning Research</em> (02/2026). <a href="https://openreview.net/forum?id=94y5XfiJ7N" target="_blank">OpenReview</a> &middot; <a href="https://arxiv.org/abs/2412.02861" target="_blank">arXiv:2412.02861</a>. Presented at NeurIPS 2024 Workshop on Bayesian Decision-Making under Uncertainty.
+        </div>
+
+        <p>
+          <strong>Beyond bandits: Bayesian reinforcement learning and offline learning (Papers E &amp; F).</strong> The final part of the thesis asks whether the information-theoretic ideas developed for bandits extend to full reinforcement learning, where actions influence future states. Paper E establishes a framework for analysing the <em>minimum Bayesian regret</em> in Markov decision processes, using a data-processing inequality to show that any transformation of the agent&rsquo;s knowledge can only decrease achievable performance, bounding the inherent difficulty of RL problems using information-theoretic divergences. Paper F turns to the offline setting, where a fixed dataset of logged interactions must be used to select a policy. It derives parameter-free PAC-Bayesian bounds that achieve optimal rates, connecting directly to relative-entropy policy search methods like TRPO and PPO.
+        </p>
+
+        <div class="paper-box">
+          <strong>Papers E &amp; F</strong>
+          &ldquo;An Information-Theoretic Analysis of Bayesian Reinforcement Learning&rdquo; (Allerton 2022) and &ldquo;Refined PAC-Bayes Bounds for Offline Bandits&rdquo; (ISIT 2025).
+        </div>
+
+        <h2>The broader picture</h2>
+
+        <p>
+          What makes the information-theoretic approach appealing is that it gives clean, interpretable answers to the question of why some problems are hard. The regret bounds derived through information ratios identify precisely which features of a problem drive the sample complexity: the prior uncertainty (entropy), the structural relationship between actions and rewards (dimension, alignment), and the quality of the information gathered per round. This is not just about proving tight bounds, it is about understanding what makes learning efficient.
+        </p>
+
+        <p>
+          The framework also has practical implications. Algorithms like Information Directed Sampling are built by directly minimising the information ratio at each step, selecting actions that promise the greatest reduction in uncertainty per unit of regret. The theory provides both the justification and the objective for such algorithms.
+        </p>
+
+        <p>
+          If you want to go deeper, the natural starting points are the Russo&ndash;Van Roy paper (JMLR 2016) and the tutorial on Thompson Sampling by Russo, Van Roy, Kazerouni, Osband, and Wen. For the extension to contextual settings, Neu et al. (NeurIPS 2022) is the key reference. And for the information-theoretic analysis of offline learning, the PAC-Bayesian literature starting from Catoni (2007) provides the foundation.
+        </p>
+
+        <div class="footnotes">
+          <ol>
+            <li id="fn1">Russo, D. and Van Roy, B. (2016). &ldquo;An information-theoretic analysis of Thompson sampling.&rdquo; <em>Journal of Machine Learning Research</em>, 17(68), 2442&ndash;2471. <a href="#ref1">&uarr;</a></li>
+            <li id="fn2">Thompson, W.R. (1933). &ldquo;On the likelihood that one unknown probability exceeds another in view of the evidence of two samples.&rdquo; <em>Biometrika</em>, 25(3&ndash;4), 285&ndash;294. The rediscovery paper is Chapelle, O. and Li, L. (2011). &ldquo;An Empirical Evaluation of Thompson Sampling.&rdquo; <em>NeurIPS</em>. <a href="#ref2">&uarr;</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </article>
+  </div>
+
+  <div class="page__footer">
+    <footer>
+      &copy; 2026 Amaury Gouverneur
+    </footer>
+  </div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ],
+      throwOnError: false
+    });"></script>
+</body>
+</html>
