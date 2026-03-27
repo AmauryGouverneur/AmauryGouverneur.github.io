@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What are Bandits, and Why Does Thompson Sampling Work? — Amaury Gouverneur</title>
-  <meta name="description" content="A non-technical introduction to the explore–exploit tradeoff, bandit problems, and the information-theoretic analysis of Thompson Sampling.">
+  <meta name="description" content="A note on bandits, UCB, Thompson Sampling, the Russo–Van Roy framework, and what later work revealed about frequentist regret.">
   <link rel="canonical" href="https://amaurygouverneur.github.io/writing/thompson-sampling/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="What are Bandits, and Why Does Thompson Sampling Work? — Amaury Gouverneur">
-  <meta property="og:description" content="A non-technical introduction to the explore–exploit tradeoff, bandit problems, and the information-theoretic analysis of Thompson Sampling.">
+  <meta property="og:description" content="A note on bandits, UCB, Thompson Sampling, the Russo–Van Roy framework, and what later work revealed about frequentist regret.">
   <meta property="og:url" content="https://amaurygouverneur.github.io/writing/thompson-sampling/">
   <meta property="og:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="What are Bandits, and Why Does Thompson Sampling Work? — Amaury Gouverneur">
-  <meta name="twitter:description" content="A non-technical introduction to the explore–exploit tradeoff, bandit problems, and the information-theoretic analysis of Thompson Sampling.">
+  <meta name="twitter:description" content="A note on bandits, UCB, Thompson Sampling, the Russo–Van Roy framework, and what later work revealed about frequentist regret.">
   <meta name="twitter:image" content="https://amaurygouverneur.github.io/images/Phired%20Event-142%204.jpg">
   <meta name="theme-color" content="#1c6d80">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -37,147 +37,172 @@
         <header class="article-header">
           <p class="article-kicker">Research note</p>
           <h1>What are Bandits, and Why Does Thompson Sampling Work?</h1>
-          <p class="article-meta">Mar 27, 2026 &middot; A non-technical introduction to the explore&ndash;exploit tradeoff</p>
+          <p class="article-meta">Mar 16, 2022 &middot; Bandits, UCB, Thompson Sampling, and what later theory revealed</p>
         </header>
 
         <p>
-          A recurring theme in my research is the question of how an agent should balance <em>learning</em> and <em>acting</em> when it cannot do both at the same time. This post is an attempt to explain that question, and one beautiful answer to it, without assuming any background beyond curiosity.
-        </p>
-
-        <h2>The slot machine problem</h2>
-
-        <p>
-          Imagine you walk into a casino and sit down in front of a row of slot machines. Each machine has its own (unknown) average payout. You get to pull arms one at a time, observe the result, and keep the winnings. Your goal is to make as much money as possible over, say, one hundred pulls.
+          The multi-armed bandit is the cleanest mathematical model of learning under uncertainty. You repeatedly choose among actions with unknown rewards, and every choice has a double role: it earns payoff now, but it also teaches you something about what to do next. That tension between <em>exploration</em> and <em>exploitation</em> is what makes bandits interesting.
         </p>
 
         <p>
-          The difficulty is immediately apparent. To know which machine is best, you need to try them. But every pull spent on an inferior machine is money you could have made on the best one. This is the <em>explore&ndash;exploit dilemma</em>: gather information, or use the information you already have?
+          This note focuses on one particular line of ideas: the classic bandit problem, the contrast between <em>UCB</em> and <em>Thompson Sampling</em>, the information-theoretic framework of Russo and Van Roy, and what later work showed about where Thompson Sampling is strong, and where it can fail in the frequentist setting.
+        </p>
+
+        <h2>The bandit problem</h2>
+
+        <p>
+          The standard mental picture is a row of slot machines. Each arm has an unknown mean reward. At each round you choose one arm, observe a reward, and update your beliefs. If you always knew the best arm, the problem would be trivial. The difficulty is that learning which arm is best requires trying arms that may not be best.
         </p>
 
         <p>
-          This toy problem, the multi-armed bandit, is the simplest formal model of sequential decision-making under uncertainty. Despite its simplicity, it captures the essence of a surprisingly large class of real problems: a recommendation system deciding which article to show a user; a drug trial allocating patients to treatments; an optimizer tuning hyperparameters of a model. In all of these, every decision is both an action (exploit what you know) and an experiment (learn something new).
-        </p>
-
-        <h2>Measuring performance: regret</h2>
-
-        <p>
-          How do we judge an algorithm&rsquo;s performance? The standard answer is <em>regret</em>: the total reward lost by not always pulling the best arm. If you knew which arm was best from the start, you would pull it every time and collect the maximum possible reward. Regret is the gap between that ideal and what your algorithm actually achieved.
-        </p>
-
-        <p>
-          Good algorithms achieve regret that grows slowly, ideally as the square root of the number of pulls, or $O(\sqrt{T})$, rather than linearly. A linear rate means you never really learned; a $\sqrt{T}$ rate means you identified the best arm quickly and then exploited it. The goal of bandit theory is to design and analyse algorithms that achieve this, and to understand the limits of what is achievable.
-        </p>
-
-        <h2>A naive approach, and why it fails</h2>
-
-        <p>
-          One instinct is to be <em>greedy</em>: always pull the arm that currently looks best based on what you have observed so far. The problem is that greediness exploits too aggressively. If arm A pays off on the first pull and arm B does not, a greedy algorithm abandons B forever, even if B is actually far better and just got unlucky once.
-        </p>
-
-        <p>
-          The opposite extreme is to explore uniformly: spend a fixed fraction of pulls on each arm regardless of what you learn. This wastes too many pulls on arms you have already identified as poor.
-        </p>
-
-        <p>
-          Effective algorithms balance these extremes. The classic approach, <em>UCB (Upper Confidence Bound)</em>, adds an exploration bonus to each arm&rsquo;s estimated value: the less an arm has been tried, the larger its bonus. This makes under-explored arms artificially attractive, guaranteeing that every arm gets tried enough. UCB works well and has clean theoretical guarantees, but it is somewhat mechanical. Thompson Sampling takes a more elegant probabilistic approach.
-        </p>
-
-        <h2>Thompson Sampling: acting as if you believe</h2>
-
-        <p>
-          Thompson Sampling was proposed by William Thompson in 1933 and largely forgotten until it was rediscovered empirically around 2011.<sup><a href="#fn1" id="ref1">1</a></sup> Its simplicity is remarkable.
-        </p>
-
-        <p>
-          At each step, instead of computing a point estimate of each arm&rsquo;s value, Thompson Sampling maintains a full <em>posterior distribution</em> over what each arm&rsquo;s true payout might be. This distribution encodes both what you believe and how uncertain you are. Then, to choose an action, it does something simple: sample a plausible world from the posterior, and act optimally in that world.
-        </p>
-
-        <p>
-          More concretely: if you believe arm A has a 70% chance of being the best arm and arm B has a 30% chance, Thompson Sampling will pull A roughly 70% of the time and B roughly 30% of the time. This is neither greedy (which would always pull A) nor uniform (which would split 50/50). The more certain you are about which arm is best, the more you exploit it; the more uncertain you are, the more you keep exploring.
-        </p>
-
-        <p>
-          This is exploration as a byproduct of uncertainty, not as a forced intervention. The algorithm is just doing what a rational Bayesian agent would do: act according to what is plausible.
-        </p>
-
-        <h2>Why does it work? The information-theoretic view</h2>
-
-        <p>
-          Thompson Sampling has good empirical performance, but <em>why</em> does it work theoretically? The cleanest answer comes from an information-theoretic framework developed by Russo and Van Roy.<sup><a href="#fn2" id="ref2">2</a></sup> My own research builds directly on this framework.
-        </p>
-
-        <p>
-          The key idea is to ask: at each step, how much does the algorithm <em>learn</em> relative to how much it <em>loses</em>? Define the <em>information ratio</em> as
+          Performance is measured by <em>regret</em>, the reward lost relative to an oracle that always plays the optimal arm. If arm means are $\mu_a$ and the optimal mean is $\mu^*$, then
         </p>
 
         <blockquote>
-          <p>$$\Psi_t = \frac{(\text{expected instantaneous regret})^2}{\text{information gained about the best arm}}$$</p>
+          <p>$$\mathrm{Regret}(T) = \sum_{t=1}^T \bigl(\mu^* - \mu_{A_t}\bigr).$$</p>
         </blockquote>
 
         <p>
-          If this ratio is small, the algorithm is learning efficiently: it only incurs regret when it is genuinely uncertain, and each time it takes a suboptimal action, it learns something. Russo and Van Roy showed that if the information ratio is bounded by some constant $\Gamma$, then total Bayesian regret over $T$ steps is at most
+          Good algorithms have regret growing much slower than $T$, ideally on the order of $\sqrt{T}$ up to logarithmic factors. That means they pay a finite price for learning, then increasingly exploit what they have learned.
+        </p>
+
+        <h2>UCB: optimism as a principle</h2>
+
+        <p>
+          A purely greedy strategy fails because early noise can trap you. If one arm gets lucky on its first few pulls, greed may keep choosing it forever. The classical repair is <em>optimism in the face of uncertainty</em>.
+        </p>
+
+        <p>
+          In Upper Confidence Bound methods, each arm is scored by an estimate plus an exploration bonus:
         </p>
 
         <blockquote>
-          <p>$$\sqrt{\Gamma \cdot T \cdot H(A^*)}$$</p>
+          <p>$$\text{score}_a(t) = \widehat{\mu}_a(t) + \text{bonus}_a(t).$$</p>
         </blockquote>
 
         <p>
-          where $H(A^*)$ is the prior entropy of the optimal arm, essentially how uncertain you were at the start about which arm was best. The more uncertain you are, the more time you need; but if $\Gamma$ is small, you learn efficiently throughout.
+          Arms with uncertain estimates get larger bonuses, so the algorithm is systematically drawn toward options that could plausibly be better than they currently look. UCB is attractive because the logic is transparent and the guarantees are frequentist: they hold uniformly over all problem instances in a class, not just on average under a prior.<sup><a href="#fn1" id="ref1">1</a></sup>
         </p>
 
         <p>
-          The remarkable fact is that Thompson Sampling has a provably bounded information ratio. The intuition is elegant: because Thompson Sampling samples its action from the same distribution as the optimal arm, the action it takes is always <em>plausibly optimal</em>. When it is suboptimal, it must have been genuinely uncertain, and that uncertainty is precisely what gets resolved by the observed reward. Regret and information gain are therefore tightly coupled, and neither can happen without the other.
+          The price is that UCB can feel somewhat rigid. You have to design the right bonus, and in richer models those bonuses can become technically delicate.
         </p>
 
-        <h2>From simple bandits to richer settings</h2>
+        <h2>Thompson Sampling: exploration by posterior sampling</h2>
 
         <p>
-          The bandit model I have described is deliberately bare: a fixed set of arms, stationary reward distributions, no side information. Real problems are messier. My research has been about extending the information-theoretic analysis to settings where the simple version breaks down.
+          Thompson Sampling takes a different route. Instead of building an upper confidence bound, it maintains a posterior distribution over unknown parameters and samples one plausible model from that posterior. It then acts greedily in the sampled model.<sup><a href="#fn2" id="ref2">2</a></sup>
         </p>
 
         <p>
-          <strong>Linear bandits.</strong> When actions are feature vectors and rewards are linear functions of an unknown parameter, the number of &ldquo;arms&rdquo; is effectively infinite (or continuous). Standard entropy-based analysis cannot handle this because the entropy of a continuous random variable is unbounded. My work with Borja Rodr&iacute;guez-G&aacute;lvez and our supervisors shows that by approximating the optimal action at a finite resolution, and carefully controlling the approximation error, one can still obtain near-optimal regret bounds for Thompson Sampling in continuous action spaces, recovering the classical $O(d\sqrt{T} \log T)$ rate in $d$-dimensional problems and extending it beyond finite action sets for the first time.
+          This gives a beautifully simple behavior. If the algorithm is nearly sure which arm is best, the posterior sample will almost always agree and it will exploit. If several arms still look plausible, they will each be sampled with noticeable probability and the algorithm will explore. Exploration is not added by hand; it emerges from uncertainty.
+        </p>
+
+        <p>
+          This is one reason Thompson Sampling is so appealing in practice. It is easy to describe, easy to implement in many Bayesian models, and often performs strikingly well empirically. But it raises a natural question: why should sampling from a posterior automatically produce good regret?
+        </p>
+
+        <h2>The Russo&ndash;Van Roy framework</h2>
+
+        <p>
+          The cleanest answer comes from the information-theoretic analysis of Russo and Van Roy.<sup><a href="#fn3" id="ref3">3</a></sup> Their key object is the <em>information ratio</em>, which compares what the algorithm loses at a round to what it learns from that round.
+        </p>
+
+        <blockquote>
+          <p>$$\Psi_t = \frac{(\text{expected instantaneous regret})^2}{\text{information gained about the best arm}}.$$</p>
+        </blockquote>
+
+        <p>
+          If this ratio is small, the algorithm is paying regret efficiently: whenever it sacrifices reward, it is buying information that helps future decisions. Russo and Van Roy showed that if $\Psi_t \le \Gamma$ uniformly, then the cumulative Bayesian regret satisfies
+        </p>
+
+        <blockquote>
+          <p>$$\mathbb{E}[\mathrm{Regret}(T)] \leq \sqrt{\Gamma \cdot T \cdot H(A^*)},$$</p>
+        </blockquote>
+
+        <p>
+          where $H(A^*)$ is the entropy of the optimal arm under the prior. This is an elegant formula. Regret depends on three things: the time horizon, how uncertain you initially were about the optimum, and how efficiently the algorithm converts regret into information.
+        </p>
+
+        <p>
+          The remarkable part is that Thompson Sampling naturally has a small information ratio in many settings. Intuitively, it chooses an action because that action looks optimal in a plausible world. If the action turns out to be suboptimal, that can only be because there was real uncertainty about what was best, and observing the reward helps resolve exactly that uncertainty. Regret and information gain are therefore tightly linked.
+        </p>
+
+        <p>
+          This framework unified a wide range of problems: ordinary multi-armed bandits, full-information problems, linear bandits, and semi-bandit settings. It also highlighted something conceptually important: not all uncertainty matters equally. What matters is not the entropy of the whole parameter, but the uncertainty about the <em>optimal action</em>.
+        </p>
+
+        <h2>What the framework does not give you</h2>
+
+        <p>
+          The Russo&ndash;Van Roy theory is Bayesian. Its guarantees are expectations under a prior, and its complexity term is the entropy of the optimal action under that prior. That makes the theory insightful, but it is not the same as a worst-case frequentist guarantee.
+        </p>
+
+        <p>
+          In many applications, that distinction matters. A Bayesian bound may say that an algorithm is excellent on average under a prior, while a frequentist analysis asks a harsher question: if I fix an arbitrary problem instance in this class, how bad can the regret be? For Thompson Sampling, this turned out to be more subtle than the early Bayesian story suggested.
+        </p>
+
+        <p>
+          The issue is not that Thompson Sampling becomes a bad idea in general. The issue is that posterior sampling alone does not automatically guarantee the kind of optimism or coverage that frequentist analyses often need.
+        </p>
+
+        <h2>Frequentist limitations of Thompson Sampling</h2>
+
+        <p>
+          A sharp warning comes from work by Raymond Zhang and Richard Combes on combinatorial semi-bandits.<sup><a href="#fn4" id="ref4">4</a></sup> They show that standard Thompson Sampling can be <em>suboptimal in high dimensions</em>: its regret can scale exponentially in the ambient dimension on some instances, and its minimax regret can be almost linear in $T$.
+        </p>
+
+        <p>
+          Conceptually, this is striking. Thompson Sampling is often praised for being automatically exploratory, but these examples show that its exploration can still be too weak in the wrong geometry. In their constructions, the algorithm can become overly committed to an apparently good region and take exponentially long to discover the truly optimal decision. Even adding a fixed amount of forced exploration at the start does not fix the problem.
+        </p>
+
+        <p>
+          This does not contradict the Bayesian analysis. It clarifies its scope. The information-ratio framework explains why Thompson Sampling can be efficient under a prior; it does not imply that posterior sampling is always minimax-optimal in worst-case frequentist terms.
         </p>
 
         <div class="paper-box">
-          <strong>Papers A &amp; B</strong> &mdash; &ldquo;An Information-Theoretic Analysis of Thompson Sampling with Infinite Action Spaces&rdquo; (ICASSP 2025) and &ldquo;Chained Information-Theoretic Bounds and Tight Regret Rate for Linear Bandit Problems&rdquo; (under revision, IEEE Trans. Information Theory; ICML 2024 Workshop).
+          <strong>Frequentist limitation</strong> Zhang, R. and Combes, R. &ldquo;On the Suboptimality of Thompson Sampling in High Dimensions.&rdquo; The paper shows that in some combinatorial semi-bandit problems, Thompson Sampling can have exponential dependence on dimension and that fixed forced exploration does not remove the issue.
         </div>
 
+        <h2>Feel-Good Thompson Sampling</h2>
+
         <p>
-          <strong>Contextual bandits.</strong> When a context (e.g., a user profile) is observed before each decision and the optimal action depends on it, the standard information ratio is no longer the right object to analyse. There is a natural generalisation, the <em>lifted information ratio</em>, that conditions regret and information gain on the observed context. My paper at ISIT 2023 extends the lifted analysis to general sub-Gaussian rewards, generalising earlier work that only covered binary outcomes, and provides simplified proofs using classical information-theoretic tools.
+          A different response comes from Tong Zhang&rsquo;s work on <em>Feel-Good Thompson Sampling</em> for contextual bandits and reinforcement learning.<sup><a href="#fn5" id="ref5">5</a></sup> The starting point is closely related: in the frequentist setting, standard Thompson Sampling may simply not be aggressive enough in exploring actions that look optimistic but are not yet well supported by the data.
+        </p>
+
+        <p>
+          The proposed fix is to bias the sampling procedure toward models that look <em>historically optimistic</em>. In other words, instead of sampling only according to posterior plausibility, the algorithm adds a &ldquo;feel-good&rdquo; term that favors models assigning high reward to actions. This makes the method more explicitly optimistic, while still retaining the posterior-sampling flavor of Thompson Sampling.
+        </p>
+
+        <p>
+          The interesting point is not only the algorithmic tweak, but the interpretation. Feel-Good Thompson Sampling suggests that the gap between Bayesian elegance and frequentist guarantees can be bridged by injecting a controlled form of optimism into posterior sampling. In Tong Zhang&rsquo;s analysis, this leads to minimax-optimal frequentist regret bounds in finite-action contextual bandits, and extends to linearly embeddable contextual bandits as well.
         </p>
 
         <div class="paper-box">
-          <strong>Paper C</strong> &mdash; &ldquo;Thompson Sampling Regret Bounds for Contextual Bandits with sub-Gaussian Rewards&rdquo; (ISIT 2023).
+          <strong>Frequentist repair</strong> Tong Zhang. &ldquo;Feel-Good Thompson Sampling for Contextual Bandits and Reinforcement Learning.&rdquo; The paper argues that standard Thompson Sampling is not sufficiently exploratory in some pessimistic frequentist settings, and shows how an optimism-leaning modification recovers strong regret guarantees.
         </div>
 
-        <p>
-          <strong>Logistic bandits.</strong> When rewards are binary and the success probability follows a logistic function of the arm&ndash;parameter inner product, previous bounds scaled <em>exponentially</em> in the logistic slope parameter $\beta$. This was widely known to be an artefact of the analysis, but resolving it had remained open for over a decade. My solo paper derives the first bounds that depend only <em>logarithmically</em> on $\beta$ and are independent of the number of actions, by exploiting the variance of the reward rather than just its expectation.
-        </p>
-
-        <div class="paper-box">
-          <strong>Paper D</strong> &mdash; &ldquo;An Information-Theoretic Analysis of Thompson Sampling for Logistic Bandit Problems&rdquo; (TMLR 2026; NeurIPS 2024 Workshop on Bayesian Decision-Making under Uncertainty). <a href="https://arxiv.org/abs/2412.02861">arXiv:2412.02861</a>.
-        </div>
-
-        <h2>The bigger picture</h2>
+        <h2>What to take away</h2>
 
         <p>
-          Bandits are a microcosm of a broader challenge: how should a rational agent under uncertainty allocate attention between learning and acting? The information-theoretic lens makes this precise. Regret is the cost of not knowing; information gain is the benefit of exploring. An algorithm with a bounded information ratio is one that never spends more than it learns, it is efficient in a deep sense.
+          UCB and Thompson Sampling solve the same exploration problem in two different ways. UCB adds optimism explicitly through bonuses. Thompson Sampling samples plausible worlds and lets uncertainty create exploration implicitly. The Russo&ndash;Van Roy framework explains beautifully why the second idea works so well in Bayesian terms: regret is acceptable when it buys information about the optimum.
         </p>
 
         <p>
-          This perspective extends beyond bandits. In reinforcement learning, where actions affect future states and not just immediate rewards, a similar trade-off governs performance. My thesis explores several steps in this direction, including Bayesian regret bounds for Markov decision processes and parameter-free PAC-Bayesian guarantees for offline learning. The bandit case remains the cleanest place to see the ideas, but the principles carry over.
+          But later work showed that this is not the end of the story. In the frequentist setting, Thompson Sampling can under-explore in structured high-dimensional problems. That is the core lesson of Raymond Zhang and Combes. Tong Zhang&rsquo;s Feel-Good Thompson Sampling pushes in the opposite direction: keep the posterior-sampling intuition, but add enough optimism to recover stronger worst-case guarantees.
         </p>
 
         <p>
-          If you want to go deeper, the best starting points are the tutorial by Russo, Van Roy, Kazerouni, Osband, and Wen on Thompson Sampling, and the monograph <em>Bandit Algorithms</em> by Lattimore and Szepesv&aacute;ri. For the information-theoretic analysis specifically, the key paper is Russo and Van Roy (JMLR 2016).
+          That, to me, is what makes the theory of bandits so appealing. Even an algorithm as simple and successful as Thompson Sampling still teaches us something subtle: uncertainty alone is often enough, but not always. The difference between &ldquo;usually works&rdquo; and &ldquo;provably robust&rdquo; is where much of the theory lives.
         </p>
 
         <div class="footnotes">
           <ol>
-            <li id="fn1">Thompson, W. R. (1933). &ldquo;On the likelihood that one unknown probability exceeds another in view of the evidence of two samples.&rdquo; <em>Biometrika</em>, 25(3&ndash;4), 285&ndash;294. The rediscovery paper is Chapelle, O. and Li, L. (2011). &ldquo;An Empirical Evaluation of Thompson Sampling.&rdquo; <em>NeurIPS</em>. <a href="#ref1">&uarr;</a></li>
-            <li id="fn2">Russo, D. and Van Roy, B. (2016). &ldquo;An information-theoretic analysis of Thompson sampling.&rdquo; <em>Journal of Machine Learning Research</em>, 17(68), 2442&ndash;2471. <a href="#ref2">&uarr;</a></li>
+            <li id="fn1">For the classical UCB perspective, see Auer, P., Cesa-Bianchi, N., and Fischer, P. (2002). &ldquo;Finite-time Analysis of the Multiarmed Bandit Problem.&rdquo; <em>Machine Learning</em>, 47, 235&ndash;256. <a href="#ref1">&uarr;</a></li>
+            <li id="fn2">Thompson, W. R. (1933). &ldquo;On the likelihood that one unknown probability exceeds another in view of the evidence of two samples.&rdquo; <em>Biometrika</em>, 25(3&ndash;4), 285&ndash;294. A modern empirical revival is Chapelle, O. and Li, L. (2011). &ldquo;An Empirical Evaluation of Thompson Sampling.&rdquo; <em>NeurIPS</em>. <a href="#ref2">&uarr;</a></li>
+            <li id="fn3">Russo, D. and Van Roy, B. (2014/2016). &ldquo;An Information-Theoretic Analysis of Thompson Sampling.&rdquo; First circulated in 2014 and published in <em>JMLR</em> in 2016. <a href="#ref3">&uarr;</a></li>
+            <li id="fn4">Zhang, R. and Combes, R. (2021). &ldquo;On the Suboptimality of Thompson Sampling in High Dimensions.&rdquo; <a href="#ref4">&uarr;</a></li>
+            <li id="fn5">Zhang, T. (2021). &ldquo;Feel-Good Thompson Sampling for Contextual Bandits and Reinforcement Learning.&rdquo; <a href="#ref5">&uarr;</a></li>
           </ol>
         </div>
 
