@@ -401,6 +401,10 @@ body.page--article .page__content blockquote .katex-display {
   text-decoration: none;
 }
 
+.page-nav a {
+  flex: 0 0 auto;
+}
+
 /* ----------------------------------------------------------
    Publication venue badge and description
    ---------------------------------------------------------- */
@@ -535,6 +539,19 @@ body.page--article .page__content tbody tr:last-child td {
     font-size: 1.7em;
   }
 
+  .page-nav {
+    flex-wrap: nowrap;
+    gap: 0.95em;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .page-nav::-webkit-scrollbar {
+    display: none;
+  }
+
   body.page--article #main {
     margin-top: 2em;
   }
@@ -570,6 +587,7 @@ body.page--article .page__content tbody tr:last-child td {
 
 @media (max-width: 480px) {
   .author__urls {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25em 0.75em;
   }
 }
