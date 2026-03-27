@@ -50,8 +50,17 @@
         <h2>Setup</h2>
 
         <p>
-          Chess-GPT is a GPT-2-style decoder-only transformer trained to predict the next move in a sequence of chess moves in <a href="https://en.wikipedia.org/wiki/Algebraic_notation_(chess)" target="_blank">SAN notation</a>. The key difference from Karvonen&rsquo;s approach is the tokenisation scheme: rather than character-level tokens, each move is treated as a single token. This reduces the vocabulary to roughly 1,855 tokens and lets the model focus on game structure rather than spending capacity learning how chess move notation is spelt.
+          The implementation is built on top of <strong>NanoGPT</strong>, Andrej Karpathy&rsquo;s compact open-source reimplementation of a GPT-style language model. NanoGPT is essentially a clean, minimal GPT-2-style decoder-only transformer training stack: it takes a sequence of tokens, processes them with masked self-attention, and learns a conditional distribution for the next token. In its standard use case those tokens are pieces of text. Here, the same autoregressive setup is repurposed for chess.
         </p>
+
+        <p>
+          Chess-GPT is then trained from scratch to predict the next move in a sequence of chess moves written in <a href="https://en.wikipedia.org/wiki/Algebraic_notation_(chess)" target="_blank">SAN notation</a>. The key difference from Karvonen&rsquo;s approach is the tokenisation scheme: rather than character-level tokens, each move is treated as a single token. This reduces the vocabulary to roughly 1,855 tokens and lets the model focus on game structure rather than spending capacity learning how chess move notation is spelt.
+        </p>
+
+        <figure style="margin: 1.8em 0;">
+          <img src="/images/fine_tuning_chess_gpt_illustration.png" alt="Illustration of adapting NanoGPT from text completion to predicting the next chess move in SAN notation" style="width: 100%; display: block; border-radius: 4px;">
+          <figcaption style="font-size: 0.85em; color: #828282; margin-top: 0.5em;">From generic text completion to chess-move prediction: NanoGPT is adapted so that, instead of sampling the next word in a text sequence, it samples the next move in a sequence of chess moves written in SAN notation.</figcaption>
+        </figure>
 
         <p>Two model sizes were trained, both with 8 attention heads and a 512-dimensional model:</p>
 
