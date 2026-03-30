@@ -40,11 +40,11 @@
         </header>
 
         <p>
-          During my internship at Lynx Asset Management, I spent a lot of time running reinforcement learning experiments for trade execution &mdash; tweaking reward shaping, swapping architectures, comparing algorithms. The feedback loop was the usual one: edit a config file, launch a script, watch logs scroll by in a terminal. It works, but it is not exactly inspiring.
+          During my internship at Lynx Asset Management, I spent a lot of time running reinforcement learning experiments for trade execution, tweaking reward shaping, swapping architectures, comparing algorithms. The feedback loop was the usual one: edit a config file, launch a script, watch logs scroll by in a terminal. It works, but it is not exactly inspiring.
         </p>
 
         <p>
-          When I later wanted to keep experimenting on my own, I found myself building a small Dash and Plotly interface to make that loop a bit more pleasant &mdash; live reward curves, toggles for observation and reward shaping, a clean way to switch between SB3 algorithms without touching a config file.
+          When I later wanted to keep experimenting on my own, I found myself building a small Dash and Plotly interface to make that loop a bit more pleasant, live reward curves, toggles for observation and reward shaping, a clean way to switch between SB3 algorithms without touching a config file.
         </p>
 
         <p>
@@ -76,14 +76,14 @@
 @media (max-width: 600px) {
   .ds-embed .ds-wrapper {
     transform-origin: top center;
-    transform: scale(0.55);
-    margin-bottom: -220px;
+    transform: scale(0.62);
+    margin-bottom: -185px;
   }
 }
 @media (max-width: 400px) {
   .ds-embed .ds-wrapper {
-    transform: scale(0.42);
-    margin-bottom: -280px;
+    transform: scale(0.48);
+    margin-bottom: -250px;
   }
 }
 .ds-embed .ds-top-half {
@@ -753,14 +753,14 @@
 </script>
         </div>
 
-        <p style="text-align:center; font-style:italic; font-size:0.85rem; margin-top: -1rem;">Try it &mdash; click the cartridge slot, select an algorithm, and hit &#9654; TRAIN.</p>
+        <p style="text-align:center; font-style:italic; font-size:0.85rem; margin-top: -1rem;">Try it, click the cartridge slot, select an algorithm, and hit &#9654; TRAIN.</p>
 
         <p>
-          The DS form factor turns out to map surprisingly well onto the RL training workflow. The top screen is for monitoring &mdash; algorithm selection and the live training curve. The bottom screen is for configuration &mdash; architecture choice, hyperparameter editing, shaping toggles. The cartridge slot loads the environment. The whole thing runs in the browser via Dash, which means the DS shell is just CSS, and CSS gives you full control over plastic textures, rounded bezels, speaker grilles, and all the rest.
+          The DS form factor turns out to map surprisingly well onto the RL training workflow. The top screen is for monitoring, algorithm selection and the live training curve. The bottom screen is for configuration, architecture choice, hyperparameter editing, shaping toggles. The cartridge slot loads the environment. The whole thing runs in the browser via Dash, which means the DS shell is just CSS, and CSS gives you full control over plastic textures, rounded bezels, speaker grilles, and all the rest.
         </p>
 
         <p>
-          I built this iteratively with Claude Code, describing the layout and handing it a reference mockup to match. The result went further than I expected &mdash; the interface handles standard Gymnasium environments, custom user-defined envs loaded from a file path, custom SB3-compatible algorithm classes, TensorBoard integration that persists after training stops, and optional Weights &amp; Biases logging.
+          I built this iteratively with Claude Code, describing the layout and handing it a reference mockup to match. The result went further than I expected, the interface handles standard Gymnasium environments, custom user-defined envs loaded from a file path, custom SB3-compatible algorithm classes, TensorBoard integration that persists after training stops, and optional Weights &amp; Biases logging.
         </p>
 
         <p>
